@@ -9,434 +9,13 @@
     <script src="https://kit.fontawesome.com/a4b206329f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/Footer.css">
     <link rel="stylesheet" href="./styles/header.css">
-    <style>
-        body {
-             padding: 0px;
-             margin: 0px; 
-            font-family:Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;
-        }
-
-        #container {
-            width: 99%;
-
-         }
-
-        #sliderbox {
-            background-color: rgb(240, 242, 244);
-            display: flex;
-            border: 0px solid red;
-            height: 900px;
-        }
-
-        #leftsilder {
-            flex: 1;
-            border: 0px solid gold;
-        }
-
-        #rightslider {
-            flex: 1;
-            border: 0px rebeccapurple solid;
-
-        }
-
-        #leftsliderbox {
-            border: 1px transparent solid;
-            background-color: white;
-            width: 93%;
-            margin: 5% 2% 5% 4%;
-            height: 90%;
-        }
-
-        #uprightslider {
-            border: 1px transparent solid;
-            background-color: white;
-            width: 92%;
-            margin: 5% 0% 5% 3%;
-            height: 50%;
-        }
-
-        #lowersliderbox {
-            background-color: white;
-            border: 1px transparent solid;
-            width: 92%;
-            margin: 5% 0% 5% 3%;
-            height: 35%;
-        }
-
-        #box1 {
-            border: 0px red solid;
-            width: 99%;
-            height: 390px;
-        }
-
-        #boxbars {
-            display: flex;
-            border: 0px green solid;
-            height: 50%;
-        }
-
-        #leftbar,
-        #rightbar {
-            display: flex;
-            width: 49%;
-            background-color: rgb(240, 242, 244);
-            margin: 5% 1% 0 1%;
-            height: 45%;
-            border-radius: 5px;
-            border: 1px rgb(184, 182, 182) solid;
-        }
-
-        a {
-            color: rgb(5, 5, 199);
-            text-decoration: none;
-        }
-
-        #leftbarimg,
-        #rightbarimg {
-            cursor: pointer;
-            border: 0px solid red;
-            padding: 1%;
-            margin-left: 20%;
-        }
-
-        #leftbartext,
-        #rightbartext {
-            line-height: 3%;
-            padding-left: 2%;
-            font-size: x-large;
-        }
-
-        #rightbarimage,
-        #leftbarimage {
-            height: 100%;
-        }
-
-        #symbolbox {
-            width: 85%;
-            margin-left: 12%;
-            display: flex;
-            height: 40%;
-            border: greenyellow 0px solid;
-        }
-
-        #symbolbox1,
-        #symbolbox2,
-        #symbolbox3 {
-            border: 0px solid rebeccapurple;
-            flex: 1;
-            display: flex;
-            height: 90%;
-        }
-
-        #symbolbox1img,
-        #symbolbox2img,
-        #symbolbox3img {
-            height: 100px;
-            cursor: pointer;
-            margin: 40% 0 0 25%;
-        }
-
-        #symbolbox1text,
-        #symbolbox2text,
-        #symbolbox3text {
-            line-height: 10%;
-            color: rgb(68, 67, 67);
-            margin: 15% 0 0 10%;
-        }
-
-        #bluebar {
-            width: 100%;
-           background-image:url("https://pisces.bbystatic.com/image2/BestBuy_US/dam/gl62892-tt-skinny-bg-lg-4ed9a87a-ca73-4e7a-8610-0f2159f2239b.jpg");
-         background-repeat: no-repeat;
-        }
-
-        #blueimage {
-        
-        margin-left: 1%;
-        height: 190px;
-        width: 98%;
-    }
-        #box2{
-            display: flex;
-            margin: 2%;
-            height: 750px;
-            border: 0px solid pink;
-        }
-        #box2a , #box2b , #box2c {
-            background-color: rgb(240, 242, 244);
-            border: 0px blue solid;
-            border-radius: 5px;
-            margin: 2%;
-            width: 30%;
-        }
-        .hd{
-            padding-left: 4%;
-        }
-        .showgrid{
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            grid-template-rows: repeat(2,260px);
-            gap:5% 2%;
-
-        }
-        .box2a1 , .box2b1 , .box2c1{
-            cursor: pointer;
-            border: 0px rgb(221, 200, 172) solid;
-        }
-        .box2height{
-            width: 92%;
-            margin: 4%;
-            height:80%;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-        }
-        .bluecolor:hover{
-            text-decoration: underline;
-
-        }
-        .bluecolor{
-            color: rgb(5, 5, 199);
-            padding-left: 4%;
-            font-size:large ;
-        }
-        /* --------------------------------------------------- */
-        #featuredproducts , #slider4 , #slider5 , #slider6 , #slider7{
-            /* display: flex; */
-            border: 0px solid sienna;
-            margin-top: 4%;
-            width: 99%;
-            height: 400px;
-        }
-        #featuredtext , .slidertext{
-            height: 10%;
-            border-bottom: 1px solid rgb(202, 199, 199);
-        }
-        #featuredtext1 , #featuredofferstext , .slidertext1 {
-            border: 0px solid red;
-            padding-left: 3%;
-           font-size: 25px;
-           line-height: normal;
-           font-weight: 600;
-        }
-        #featuredoffers{
-            border: 0px solid red;
-            margin-top: 3%;
-        }
-        #featuredoffersgrid{
-            margin-top: 1%;
-              display: grid;
-              border:  rgb(249, 252, 255) solid 1px;
-              grid-template-columns: repeat(3,1fr);
-            grid-template-rows: repeat(2,500px);
-            
-        }
-          .offers{
-            border:  rgb(242, 243, 245) solid 1px;
-          }
-          .offersimg{
-              width: 75%;
-              padding-left:10% ;
-              margin-top: 5%;
-          }
-          .skyblue{
-              color: rgb(4,87,200);
-              cursor: pointer;
-          }
-          .skyblue:hover{
-              text-decoration: underline;
-              color: navy;
-          }
-          .align{
-              padding: 5%;     
-          }
-          
-          /* ------------------------------------------ */
-          #slider3 , #slider4box , #slider5box , #slider6box , #slider7box{
-              display: flex;
-          }
-          #mainslider , .mainslider{
-              display: flex;
-              border: 1px solid rgb(205, 210, 216);
-              overflow-x: hidden;
-              overflow-y: hidden;
-    
-              /* overflow-x:unset; */
-              /* overflow-wrap: unset; */
-             flex: 7;
-             margin-top: 1.70%;
-             height: 300px;
-           
-          }
-          #leftaerro ,  #rightaerro , .leftaerro , .rightaerro{
-              cursor: pointer;
-             margin-top: 9%;
-        
-          }
-         
-          .aerrobtn{
-              border-width: 0ch;
-          }
-        
-            #grid3{
-                display: grid;
-                border:  0px solid gray;
-                grid-template-columns: repeat(3,1fr);
-                grid-template-rows: repeat(1,480px);
-                gap: 2%;
-            }
-            .grida , .gridb , .gridc{
-                box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-                border: 1px rgb(214, 214, 214) solid;
-               
-            }
-            .gridimg{
-               width: 90%;
-               margin:4% 0 0 5%;
-            }
-            .alignmnt{
-                padding-left: 4%;
-            }
-             .alignmnt1{
-                 padding:67% 0 0 10%;
-                 color: rgb(121, 125, 129);
-             }
-             #poster{
-               background-color: rgb(0,70,190); 
-                 width: 99.95%;
-                 margin-top: 3%;
-                 display: flex;
-                 justify-content: center;
-                 height: 150px; 
-            }
-             .yellow{
-                 background-color: rgb(255,224,0);
-             }
-             .white{
-                 color: whitesmoke;
-             }
-             .yellowe{
-                 color:rgb(255,224,0); 
-                 font-size:50px;
-                 font-weight: bolder;
-             }
-             #posterlogo , .posterlogo{
-                cursor: pointer;
-                 border:0px solid red;
-                 padding-top: 1%;
-                 height: 90%;
-             }
-             .applytext1{
-                 text-align: center;
-                 font-size: larger;
-                 line-height: 0%;
-                 border: 0px saddlebrown solid;
-                 width: 100%;
-                  margin:15% 0 0 6%;
-                }
-                .applytext2{
-                    font-size:x-large;
-                    border: 0px solid saddlebrown;
-                    margin:10% 0 0 10%;
-                    line-height: 1%;
-                    width: 120%;
-
-                }
-                #learnbtn{
-                    width: 150px;
-                    cursor: pointer;
-                    height: 50px;
-                    margin: 35% 0 0 55%;
-                    border-radius: 3px;
-                    color: black;
-                }
-           #lowersliderbox1{
-               display: flex;
-               margin-left: 8%;
-           }
-           #lowersliderbox2{
-               margin:3% 0 0 5%;
-               width: 50%;
-               font-size: larger;
-            
-           }
-           #bluebarimg{
-               width: 200px;
-               height: 50px;
-               border: 0px solid red;
-               margin: 25% 0 0 30%;
-           }
-           #blueimage{
-               display: flex;
-           }
-           #bluebartext3{
-               margin: 2% 0 0 15%;
-               color:whitesmoke;
-           }
-           #bluebarbtn{
-               width: 96%;
-               margin-left: 30%;
-               height: 40px;
-               border-radius: 4px;
-               border: none;
-               cursor: pointer;
-           }
-           #bluebarbtn:hover{
-              color: whitesmoke;
-              background-color: rgb(0,70,190);
-              border: whitesmoke;
-           }
-    </style>
+    <link rel="stylesheet" href="./styles/landing.css">
 </head>
 
 <body>
     <div id="container">
         <div id="header">
-            <!-- <div id="box">
-                <div id="upbox">
-                    <div id="logo">
-                        <img id="logo1"
-                            src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/BestBuy_Logo_2020-190616.png"
-                            alt="logo">
-                    </div>
-                    <div id="input">
-
-                        <div id="line">
-
-                            <button id="menu"> <i class="fa-solid fa-bars"></i>Menu</button>
-
-                        </div>
-                        <div id="inputbox">
-                            <input id="inputbox1" type="text" placeholder="Search Best Buy "><i
-                                class="fa-solid fa-magnifying-glass"></i></input>
-                        </div>
-                    </div>
-                    <div id="logo2">
-                        <div id="logotext">
-                            <p>North Anchorage</p>
-                        </div>
-                        <div id="logocart"><button id="logocartbtn"><i
-                                    class="fa-solid fa-cart-shopping "></i>Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div id="lowbox">
-                    <div id="lowbox1">
-                        <div id="lowbox1a">Top Deals</div>
-                        <div id="lowbox1b">Deal of the Day</div>
-                        <div id="lowbox1c">Best Buy Totaltech</div>
-                        <div id="lowbox1d">Credit Cards</div>
-                        <div id="lowbox1e">Gift Cards</div>
-                        <div id="lowbox1f">Gift Ideas</div>
-                        <div id="lowbox1g">More<i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                
-                    <div id="lowbox2">
-                        <div id="account">Account<i class="fa-solid fa-chevron-down"></i></div>
-                        <div id="recently">Recently Viewed<i class="fa-solid fa-chevron-down"></i></div>
-                        <div id="order">order status<i class="fa-solid fa-chevron-down"></i></div>
-                        <div id="saved">Saved Items<i class="fa-solid fa-chevron-down"></i></div>
-                    </div>
-                </div>
-            </div> -->
+            <!-- add header here -->
         </div>
         <!-- slider work start from here -->
 
@@ -447,17 +26,20 @@
             <div id="rightslider">
                 <div id="uprightslider"></div>
                 <div id="lowersliderbox">
-                    <h1><span style="color: white; background-color: rgb(187,6,40); font-size: larger; margin: 6% 0 0 5%;">Deal</span>of the Day</h1>
-                 <div id="lowersliderbox1">
-                     <div>
-                         <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/dotdfb-216889.png;maxHeight=200;maxWidth=200">
-                     </div>
-                     <div id="lowersliderbox2">
-                         <p style="color: rgb(11, 176, 241);">Check out all of today's offers</p>
-                         <p>Great deals. All Day, Every Day.</p>
-                         <p style="color: rgb(3, 171, 238);">Show now</p>
-                     </div>
-                 </div>
+                    <h1><span
+                            style="color: white; background-color: rgb(187,6,40); font-size: larger; margin: 6% 0 0 5%;">Deal</span>of
+                        the Day</h1>
+                    <div id="lowersliderbox1">
+                        <div>
+                            <img
+                                src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/dotdfb-216889.png;maxHeight=200;maxWidth=200">
+                        </div>
+                        <div id="lowersliderbox2">
+                            <p style="color: rgb(11, 176, 241);">Check out all of today's offers</p>
+                            <p>Great deals. All Day, Every Day.</p>
+                            <p style="color: rgb(3, 171, 238);">Show now</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -534,274 +116,340 @@
         <!-- blue bar -->
 
         <div id="bluebar">
-            <div id="blueimage"> 
-              
-            <div id="bluebartext1">
-                <img id="bluebarimg" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/total-tech-stacked-reverse-sol86118-059fc768-50d8-43ab-b62a-3bded1b62731.png" alt=""><br>
-                <button id="bluebarbtn">Learn More</button>
-            </div>
-            
-            <div id="bluebartext2"></div>
-            <div id="bluebartext3">
-            <h1 >The membership you and your tech deserve.</h1>
-          <span>Best Buy Totaltech™ provides 24/7/365 tech support, up to 24 months of product</span><br>
-          <span >protection, free standard installation and so much more. Terms and conditions apply.</span>
-            </div>
-           
-        </div>
+            <div id="blueimage">
 
-<!-- ----------------------------------------------- -->
-        <!-- three box of products -->
+                <div id="bluebartext1">
+                    <img id="bluebarimg"
+                        src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/total-tech-stacked-reverse-sol86118-059fc768-50d8-43ab-b62a-3bded1b62731.png"
+                        alt=""><br>
+                    <button id="bluebarbtn">Learn More</button>
+                </div>
 
-        <div id="box2">
-            <div id="box2a">
-               <h1 class="hd">Creative hobby ideas</h1> 
-               <div class="showgrid">
-                <div class="box2a1">
-                    <img class="box2height" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71384-flex-sim-220214-1705c333-6c55-42f1-acf4-2c8afbce5b72.jpg;maxHeight=216;maxWidth=216" alt="">
-                    <p class="bluecolor">Indoor golf simulators</p>
+                <div id="bluebartext2"></div>
+                <div id="bluebartext3">
+                    <h1>The membership you and your tech deserve.</h1>
+                    <span>Best Buy Totaltech™ provides 24/7/365 tech support, up to 24 months of product</span><br>
+                    <span>protection, free standard installation and so much more. Terms and conditions apply.</span>
                 </div>
-                <div class="box2a1" >
-                    <img class="box2height" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71384-flex-legos-220214-657df8e5-315e-49cb-ab3c-fdb7773f3773.jpg;maxHeight=216;maxWidth=216" alt="">
-                    <p class="bluecolor">Advanced LEGO sets</p>
+
+            </div>
+
+            <!-- ----------------------------------------------- -->
+            <!-- three box of products -->
+
+            <div id="box2">
+                <div id="box2a">
+                    <h1 class="hd">Creative hobby ideas</h1>
+                    <div class="showgrid">
+                        <div class="box2a1">
+                            <img class="box2height"
+                                src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71384-flex-sim-220214-1705c333-6c55-42f1-acf4-2c8afbce5b72.jpg;maxHeight=216;maxWidth=216"
+                                alt="">
+                            <p class="bluecolor">Indoor golf simulators</p>
+                        </div>
+                        <div class="box2a1">
+                            <img class="box2height"
+                                src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71384-flex-legos-220214-657df8e5-315e-49cb-ab3c-fdb7773f3773.jpg;maxHeight=216;maxWidth=216"
+                                alt="">
+                            <p class="bluecolor">Advanced LEGO sets</p>
+                        </div>
+                        <div class="box2a1">
+                            <img class="box2height"
+                                src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71384-flex-plant-220214-90827550-8a57-4676-b328-483d6a6b143e.jpg;maxHeight=216;maxWidth=216"
+                                alt="">
+                            <p class="bluecolor">Indoor gardening</p>
+                        </div>
+                        <div class="box2a1">
+                            <img class="box2height"
+                                src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71384-flex-cricut-220214-aa25b5bd-2f5d-47cc-94a8-4a43c67e57ce.jpg;maxHeight=216;maxWidth=216"
+                                alt="">
+                            <p class="bluecolor">Circuit crafting tools</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="box2a1">
-                    <img class="box2height" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71384-flex-plant-220214-90827550-8a57-4676-b328-483d6a6b143e.jpg;maxHeight=216;maxWidth=216" alt="">
-                    <p class="bluecolor">Indoor gardening</p>
+                <div id="box2b">
+                    <h1 class="hd">Shop with a Home Expert</h1>
+                    <div class="showgrid">
+                        <div class="box2b1">
+                            <img class="box2height"
+                                src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71386-flex-fitness-220214-d8691682-1900-4a6f-91f6-393522f0ce76.jpg;maxHeight=216;maxWidth=216"
+                                alt="">
+                            <p class="bluecolor">Reach your fitness goals at home.</p>
+                        </div>
+                        <div class="box2b1">
+                            <img class="box2height"
+                                src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71386-flex-wifi-220214-089b6f7f-40ae-4504-b21b-704de2070744.jpg;maxHeight=216;maxWidth=216"
+                                alt="">
+                            <p class="bluecolor">Make your home smater.</p>
+                        </div>
+                        <div class="box2b1">
+                            <img class="box2height"
+                                src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71386-flex-he-220214-efcf1366-90d7-49fb-a2fe-51b25a4bf8d3.jpg;maxHeight=216;maxWidth=216"
+                                alt="">
+                            <p class="bluecolor">Transform your entertaimnent space</p>
+                        </div>
+                        <div class="box2b1">
+                            <img class="box2height" class="box2height"
+                                src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71386-flex-kitchen-220214-2589a2d0-9943-4065-960a-e562c0d84fbd.jpg;maxHeight=216;maxWidth=216"
+                                alt="">
+                            <p class="bluecolor"> Get the kitchen of your dreams</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="box2a1">
-                    <img class="box2height" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71384-flex-cricut-220214-aa25b5bd-2f5d-47cc-94a8-4a43c67e57ce.jpg;maxHeight=216;maxWidth=216" alt="">
-                    <p class="bluecolor">Circuit crafting tools</p>
+                <div id="box2c">
+                    <h1 class="hd">Black History Month</h1>
+                    <div class="showgrid">
+                        <div class="box2c1">
+                            <img class="box2height"
+                                src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/GL-59250-pol-mot-bhm-210117-207943.png;maxHeight=216;maxWidth=216"
+                                alt="">
+                            <p class="bluecolor">Video series: Discussing tech an.</p>
+                        </div>
+                        <div class="box2c1">
+                            <img class="box2height"
+                                src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71385-flex-hammock-220214-450869d1-e732-43c7-a24d-bc182bcd48de.jpg;maxHeight=216;maxWidth=216"
+                                alt="">
+                            <p class="bluecolor">More Black ideas. More Black Makers.</p>
+                        </div>
+                        <div class="box2c1">
+                            <img class="box2height"
+                                src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71385-flex-coffee-220214-5d39ed9b-501e-471d-96a8-d0715aa7cfb4.jpg;maxHeight=216;maxWidth=216"
+                                alt="">
+                            <p class="bluecolor">Teens brewed up art, tunes for coffee.</p>
+                        </div>
+                        <div class="box2c1">
+                            <img class="box2height"
+                                src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71385-flex-movies-220214-4c88b1f0-110b-43c8-aa24-426ae940ff3d.jpg;maxHeight=216;maxWidth=216"
+                                alt="">
+                            <p class="bluecolor">Music and film Black creators.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </div>
-            <div id="box2b">
-                <h1 class="hd">Shop with a Home Expert</h1>
-                <div class="showgrid">
-                <div class="box2b1">
-                    <img class="box2height" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71386-flex-fitness-220214-d8691682-1900-4a6f-91f6-393522f0ce76.jpg;maxHeight=216;maxWidth=216" alt="">
-                    <p class="bluecolor">Reach your fitness goals at home.</p>
+            <!-- ------------------------------------------------------------------- -->
+            <!-- Fearuted products starting -->
+            <div id="featuredproducts">
+                <div id="featuredtext">
+                    <span id="featuredtext1">Featured products</span>
+                    <span id="featuredtext2">(15 items)</span>
                 </div>
-                <div class="box2b1">
-                    <img class="box2height" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71386-flex-wifi-220214-089b6f7f-40ae-4504-b21b-704de2070744.jpg;maxHeight=216;maxWidth=216" alt="">
-                    <p class="bluecolor">Make your home smater.</p>
-                </div>
-                <div class="box2b1">
-                    <img class="box2height" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71386-flex-he-220214-efcf1366-90d7-49fb-a2fe-51b25a4bf8d3.jpg;maxHeight=216;maxWidth=216" alt="">
-                    <p class="bluecolor">Transform your entertaimnent space</p>
-                </div>
-                <div class="box2b1">
-                    <img class="box2height" class="box2height" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71386-flex-kitchen-220214-2589a2d0-9943-4065-960a-e562c0d84fbd.jpg;maxHeight=216;maxWidth=216" alt="">
-                    <p class="bluecolor"> Get the kitchen of your dreams</p>
+                <div id="slider3">
+                    <div id="leftaerro">
+                        <button class="aerrobtn"><i class="fa-solid fa-angle-left fa-3x"></i></button>
+                    </div>
+                    <div id="mainslider"></div>
+                    <div id="rightaerro">
+                        <button class="aerrobtn" id="aerrobtn"><i class="fa-solid fa-angle-right fa-3x"></i></button>
+                    </div>
                 </div>
             </div>
-            </div>
-            <div id="box2c">
-                <h1 class="hd">Black History Month</h1>
-                <div class="showgrid">
-                <div class="box2c1" >
-                    <img class="box2height" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/GL-59250-pol-mot-bhm-210117-207943.png;maxHeight=216;maxWidth=216" alt="">
-                    <p class="bluecolor">Video series: Discussing tech an.</p>
-                </div>
-                <div class="box2c1">
-                    <img class="box2height" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71385-flex-hammock-220214-450869d1-e732-43c7-a24d-bc182bcd48de.jpg;maxHeight=216;maxWidth=216" alt="">
-                    <p class="bluecolor">More Black ideas. More Black Makers.</p>
-                </div>
-                <div class="box2c1">
-                    <img class="box2height" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71385-flex-coffee-220214-5d39ed9b-501e-471d-96a8-d0715aa7cfb4.jpg;maxHeight=216;maxWidth=216" alt="">
-                    <p class="bluecolor">Teens brewed up art, tunes for coffee.</p>
-                </div>
-                <div class="box2c1">
-                    <img class="box2height" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-71385-flex-movies-220214-4c88b1f0-110b-43c8-aa24-426ae940ff3d.jpg;maxHeight=216;maxWidth=216" alt="">
-                    <p class="bluecolor">Music and film Black creators.</p>
-                </div>
-            </div>
-            </div>
-        </div>
-<!-- ------------------------------------------------------------------- -->
-        <!-- Fearuted products starting -->
-           <div id="featuredproducts">
-               <div id="featuredtext">
-                   <span id="featuredtext1">Featured products</span>
-                   <span id="featuredtext2">(15 items)</span>
-               </div>
-               <div id="slider3">
-                   <div id="leftaerro">
-                <button class="aerrobtn"><i class="fa-solid fa-angle-left fa-3x"></i></button>
-                   </div>
-                   <div id="mainslider"></div>
-                   <div id="rightaerro">
-                    <button class="aerrobtn" id="aerrobtn"><i class="fa-solid fa-angle-right fa-3x"></i></button>
-                   </div>
-               </div>
-           </div>
 
 
-           <!-- ---------------------------------------------------------------------- -->
-           <!-- Featured offers -->
+            <!-- ---------------------------------------------------------------------- -->
+            <!-- Featured offers -->
 
-           <div id="featuredoffers">
-               <div><span id="featuredofferstext">Our featured offers</span></div>
-               <div id="featuredoffersgrid">
-                   <div class="offers">
-                      
-                        <img class="offersimg" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_6479683_le-xx-0301-9ca1a86c-3aa4-4d51-a7ab-db1ebf4522b9.jpg;maxHeight=504;maxWidth=740" alt="">
+            <div id="featuredoffers">
+                <div><span id="featuredofferstext">Our featured offers</span></div>
+                <div id="featuredoffersgrid">
+                    <div class="offers">
+
+                        <img class="offersimg"
+                            src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_6479683_le-xx-0301-9ca1a86c-3aa4-4d51-a7ab-db1ebf4522b9.jpg;maxHeight=504;maxWidth=740"
+                            alt="">
                         <div class="align">
-                        <a href=""><h2 class="skyblue">Save up to $400 on select Lenovo laptops.</h2></a>
-                        <p>Minimum savings is $30.</p>
-                       </div>
+                            <a href="">
+                                <h2 class="skyblue">Save up to $400 on select Lenovo laptops.</h2>
+                            </a>
+                            <p>Minimum savings is $30.</p>
+                        </div>
                     </div>
-                   <div class="offers">
-                    <img class="offersimg" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-co97102-google_DER-b1a0c0aa-0121-47d3-9409-406edb856991.jpg;maxHeight=504;maxWidth=740" alt="">
-                   
-                   <div class="align">
-                    <a href=""><h2 class="skyblue" class="align">when you buy an eligible Google smart home product. Choose from security cameras, thermostats and more.</h2></a>
-                    <p>Excludes open-box items. Terms and conditions apply.</p>
-                   </div> 
-                   </div>
-                   <div class="offers">
-                    <img class="offersimg" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-470396-smarttv-pol_der-e7a6cbc9-acd8-4e71-8900-06e0123a4cd6.jpg;maxHeight=504;maxWidth=740" alt="">
-                    <div class="align">
-                    <a href=""><h2 class="skyblue">Stream your favorites from popular services, get personalized content and more.</h2></a>
+                    <div class="offers">
+                        <img class="offersimg"
+                            src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-co97102-google_DER-b1a0c0aa-0121-47d3-9409-406edb856991.jpg;maxHeight=504;maxWidth=740"
+                            alt="">
+
+                        <div class="align">
+                            <a href="">
+                                <h2 class="skyblue" class="align">when you buy an eligible Google smart home product.
+                                    Choose from security cameras, thermostats and more.</h2>
+                            </a>
+                            <p>Excludes open-box items. Terms and conditions apply.</p>
+                        </div>
+                    </div>
+                    <div class="offers">
+                        <img class="offersimg"
+                            src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-470396-smarttv-pol_der-e7a6cbc9-acd8-4e71-8900-06e0123a4cd6.jpg;maxHeight=504;maxWidth=740"
+                            alt="">
+                        <div class="align">
+                            <a href="">
+                                <h2 class="skyblue">Stream your favorites from popular services, get personalized
+                                    content and more.</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="offers">
+                        <img class="offersimg" class="offersimg"
+                            src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-MMT-496824-220103_DER-fb1dfb45-79e1-432d-a419-a875013e69ba.jpg;maxHeight=504;maxWidth=740"
+                            alt="">
+                        <div class="align">
+                            <a href="">
+                                <h2 class="skyblue">Epson EcoTank printers.</h2>
+                            </a>
+                            <p>A game-changing amount of ink.</p>
+                        </div>
+                    </div>
+                    <div class="offers">
+                        <img class="offersimg"
+                            src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_MMT-514521_der-133f2d2d-373f-4ded-af55-1df50445f88a.jpg;maxHeight=504;maxWidth=740"
+                            alt="">
+                        <div class="align">
+                            <a href="">
+                                <h2 class="skyblue">Save on select Bissell floor care.</h2>
+                            </a>
+                            <p>No matter the surface, Bissell cleans dirt and messes easily.</p>
+                        </div>
+                    </div>
+                    <div class="offers">
+                        <img class="offersimg"
+                            src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-mmt511969-3-sony_DER-37b02401-343a-45b8-b008-5587ce4b9c0a.jpg;maxHeight=504;maxWidth=740"
+                            alt="">
+                        <div class="align">
+                            <a href="">
+                                <h2 class="skyblue">New Sony LinkBuds true wireless headphones.</h2>
+                            </a>
+                            <p>LinkBuds keep you connected and in control of your music by combining comfortable,
+                                open-ear styling with excellent call and sound quality.</p>
+                        </div>
                     </div>
                 </div>
-                   <div class="offers">
-                    <img class="offersimg" class="offersimg" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-MMT-496824-220103_DER-fb1dfb45-79e1-432d-a419-a875013e69ba.jpg;maxHeight=504;maxWidth=740" alt="">
-                    <div class="align">
-                    <a href=""><h2 class="skyblue">Epson EcoTank printers.</h2></a>
-                    <p>A game-changing amount of ink.</p>
+            </div>
+
+            <!-- inspired by your shopping history -->
+
+            <div id="slider4">
+                <div class="slidertext">
+                    <span class="slidertext1">Inspired by your shopping history</span>
+                    <span class="slidertext2">(15 items)</span>
+                </div>
+                <div id="slider4box">
+                    <div class="leftaerro">
+                        <button class="aerrobtn"><i class="fa-solid fa-angle-left fa-3x"></i></button>
                     </div>
-                   </div>
-                   <div class="offers">
-                    <img class="offersimg" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol_MMT-514521_der-133f2d2d-373f-4ded-af55-1df50445f88a.jpg;maxHeight=504;maxWidth=740" alt="">
-                    <div class="align">
-                    <a href=""><h2 class="skyblue">Save on select Bissell floor care.</h2></a>
-                    <p>No matter the surface, Bissell cleans dirt and messes easily.</p>
-                   </div>
-                   </div>
-                   <div class="offers">
-                    <img class="offersimg" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-mmt511969-3-sony_DER-37b02401-343a-45b8-b008-5587ce4b9c0a.jpg;maxHeight=504;maxWidth=740" alt="">
-                    <div class="align">
-                    <a href=""><h2 class="skyblue">New Sony LinkBuds true wireless headphones.</h2></a>
-                    <p>LinkBuds keep you connected and in control of your music by combining comfortable, open-ear styling with excellent call and sound quality.</p>
-                   </div>
-                   </div>
-                </div>
-           </div>
-
-           <!-- inspired by your shopping history -->
-
-           <div id="slider4">
-            <div class="slidertext">
-                <span class="slidertext1">Inspired by your shopping history</span>
-                <span class="slidertext2">(15 items)</span>
-            </div>
-            <div id="slider4box">
-                <div class="leftaerro">
-             <button class="aerrobtn"><i class="fa-solid fa-angle-left fa-3x"></i></button>
-                </div>
-                <div class="mainslider"></div>
-                <div class="rightaerro">
-                 <button class="aerrobtn" id="aerrobtn"><i class="fa-solid fa-angle-right fa-3x"></i></button>
+                    <div class="mainslider"></div>
+                    <div class="rightaerro">
+                        <button class="aerrobtn" id="aerrobtn"><i class="fa-solid fa-angle-right fa-3x"></i></button>
+                    </div>
                 </div>
             </div>
-           </div>
 
-           <!-- you may also like -->
-           <div id="slider5">
-            <div class="slidertext">
-                <span class="slidertext1">You may also like</span>
-                <span class="slidertext2">(9 items)</span>
-            </div>
-            <div id="slider5box">
-                <div class="leftaerro">
-             <button class="aerrobtn"><i class="fa-solid fa-angle-left fa-3x"></i></button>
+            <!-- you may also like -->
+            <div id="slider5">
+                <div class="slidertext">
+                    <span class="slidertext1">You may also like</span>
+                    <span class="slidertext2">(9 items)</span>
                 </div>
-                <div class="mainslider"></div>
-                <div class="rightaerro">
-                 <button class="aerrobtn" class="aerrobtn"><i class="fa-solid fa-angle-right fa-3x"></i></button>
-                </div>
-            </div>
-           </div>
-
-
-           <!-- inspired by items -->
-
-           <div id="slider6">
-            <div class="slidertext">
-                <span class="slidertext1">Inspired by items you've viewed</span>
-                <span class="slidertext2">(9 items)</span>
-            </div>
-            <div id="slider6box">
-                <div class="leftaerro">
-             <button class="aerrobtn"><i class="fa-solid fa-angle-left fa-3x"></i></button>
-                </div>
-                <div class="mainslider"></div>
-                <div class="rightaerro">
-                 <button class="aerrobtn" class="aerrobtn"><i class="fa-solid fa-angle-right fa-3x"></i></button>
+                <div id="slider5box">
+                    <div class="leftaerro">
+                        <button class="aerrobtn"><i class="fa-solid fa-angle-left fa-3x"></i></button>
+                    </div>
+                    <div class="mainslider"></div>
+                    <div class="rightaerro">
+                        <button class="aerrobtn" class="aerrobtn"><i class="fa-solid fa-angle-right fa-3x"></i></button>
+                    </div>
                 </div>
             </div>
-           </div>
 
-           <!-- Deals of the day -->
 
-           <div id="grid3">
-               <div class="grida">
-                   <img class="gridimg" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/GL-37400-pol-dotd-190823_der-98962.png;maxHeight=280;maxWidth=412" alt="">
-                   <h1 class="alignmnt skyblue">Deal of the Day</h1>
-                   <p  class="alignmnt">Great deals.Every day.</p>
+            <!-- inspired by items -->
+
+            <div id="slider6">
+                <div class="slidertext">
+                    <span class="slidertext1">Inspired by items you've viewed</span>
+                    <span class="slidertext2">(9 items)</span>
                 </div>
-               <div class="gridb">
-                   <img class="gridimg" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/GL-37504-pol-outlet-190823-98410.png;maxHeight=280;maxWidth=412" alt="">
-                   <h1  class="alignmnt skyblue" >Clearance, open-box and more.</h1>
-                   <p class="alignmnt">Save when you shop the Best Buy Outlet for clearance, open-box, refurbished and pre-owned items.</p>
-                </div>
-               <div class="gridc">
-                   <h6 class="alignmnt1">ADVERTISEMENT</h6>
-               </div>
-           </div>
-
-           <!-- posters -->
-
-           <div id="poster">
-               <div id="posterlogo">
-                   <img class="posterlogo" src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-66611-cb-fs-211018-6dd3346e-0ef8-458c-b16d-5ff2264fbb11.png" alt="">
-               </div>
-               <div> 
-                   <div><p class="white applytext1">Apply today and get</p> </div>
-                   <div class="yellowe applytext1"><p class="yellowe">10% back</p></div>
-               </div>
-               <div> 
-                   <div class="white applytext2">in rewards on your first day of purchases</div>
-                   <div class="white applytext2">when you are approved for the Card.</div>
-                </div>
-               <div>
-                   <button id="learnbtn" class="yellow white">Learn More</button>
-               </div>
-           </div>
-
-           <!-- slider7 -->
-           <div id="slider7">
-            <div class="slidertext">
-                <span class="slidertext1">Featured products</span>
-                <span class="slidertext2">(9 items)</span>
-            </div>
-            <div id="slider7box">
-                <div class="leftaerro">
-             <button class="aerrobtn"><i class="fa-solid fa-angle-left fa-3x"></i></button>
-                </div>
-                <div class="mainslider"></div>
-                <div class="rightaerro">
-                 <button class="aerrobtn" class="aerrobtn"><i class="fa-solid fa-angle-right fa-3x"></i></button>
+                <div id="slider6box">
+                    <div class="leftaerro">
+                        <button class="aerrobtn"><i class="fa-solid fa-angle-left fa-3x"></i></button>
+                    </div>
+                    <div class="mainslider"></div>
+                    <div class="rightaerro">
+                        <button class="aerrobtn" class="aerrobtn"><i class="fa-solid fa-angle-right fa-3x"></i></button>
+                    </div>
                 </div>
             </div>
-           </div>
 
-           <!-- Footer -->
+            <!-- Deals of the day -->
+
+            <div id="grid3">
+                <div class="grida">
+                    <img class="gridimg"
+                        src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/GL-37400-pol-dotd-190823_der-98962.png;maxHeight=280;maxWidth=412"
+                        alt="">
+                    <h1 class="alignmnt skyblue">Deal of the Day</h1>
+                    <p class="alignmnt">Great deals.Every day.</p>
+                </div>
+                <div class="gridb">
+                    <img class="gridimg"
+                        src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/GL-37504-pol-outlet-190823-98410.png;maxHeight=280;maxWidth=412"
+                        alt="">
+                    <h1 class="alignmnt skyblue">Clearance, open-box and more.</h1>
+                    <p class="alignmnt">Save when you shop the Best Buy Outlet for clearance, open-box, refurbished and
+                        pre-owned items.</p>
+                </div>
+                <div class="gridc">
+                    <h6 class="alignmnt1">ADVERTISEMENT</h6>
+                </div>
+            </div>
+
+            <!-- posters -->
+
+            <div id="poster">
+                <div id="posterlogo">
+                    <img class="posterlogo"
+                        src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/GL-66611-cb-fs-211018-6dd3346e-0ef8-458c-b16d-5ff2264fbb11.png"
+                        alt="">
+                </div>
+                <div>
+                    <div>
+                        <p class="white applytext1">Apply today and get</p>
+                    </div>
+                    <div class="yellowe applytext1">
+                        <p class="yellowe">10% back</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="white applytext2">in rewards on your first day of purchases</div>
+                    <div class="white applytext2">when you are approved for the Card.</div>
+                </div>
+                <div>
+                    <button id="learnbtn" class="yellow white">Learn More</button>
+                </div>
+            </div>
+
+            <!-- slider7 -->
+            <div id="slider7">
+                <div class="slidertext">
+                    <span class="slidertext1">Featured products</span>
+                    <span class="slidertext2">(9 items)</span>
+                </div>
+                <div id="slider7box">
+                    <div class="leftaerro">
+                        <button class="aerrobtn"><i class="fa-solid fa-angle-left fa-3x"></i></button>
+                    </div>
+                    <div class="mainslider"></div>
+                    <div class="rightaerro">
+                        <button class="aerrobtn" class="aerrobtn"><i class="fa-solid fa-angle-right fa-3x"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer start -->
 
 
-           <div id="footer"></div>
-    </div>
+            <div id="footer">
+                <!-- add footer here -->
+            </div>
+        </div>
 </body>
 
 </html>
@@ -883,149 +531,149 @@
 
 
 
-    var slider_data=[
+    var slider_data = [
         {
-            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464688_sd.jpg;maxHeight=150;maxWidth=225",
-            name:"Level-Touch Edition App Smart Lock-Matte Black",
-            price:329 
+            Image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464688_sd.jpg;maxHeight=150;maxWidth=225",
+            name: "Level-Touch Edition App Smart Lock-Matte Black",
+            price: 329
         },
         {
-            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464686_sd.jpg;maxHeight=150;maxWidth=225",
-            name:"Level-Bolt App Retrofit Smart Lock",
-            price:190 
+            Image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464686_sd.jpg;maxHeight=150;maxWidth=225",
+            name: "Level-Bolt App Retrofit Smart Lock",
+            price: 190
         },
         {
-            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6429/6429450_sd.jpg;maxHeight=150;maxWidth=225",
-            name:"Epson-120 EpiqVision Ultra LS500 short Throw Laser Projection TV ",
-            price:5999 
+            Image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6429/6429450_sd.jpg;maxHeight=150;maxWidth=225",
+            name: "Epson-120 EpiqVision Ultra LS500 short Throw Laser Projection TV ",
+            price: 5999
         },
         {
-            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6397/6397764_sd.jpg;maxHeight=150;maxWidth=225",
-            name:"Dyson-Lightcycle Morphon Floor Light-Wgite/Silver",
-            price:8499 
+            Image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6397/6397764_sd.jpg;maxHeight=150;maxWidth=225",
+            name: "Dyson-Lightcycle Morphon Floor Light-Wgite/Silver",
+            price: 8499
         },
         {
-            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6354/6354960_sd.jpg;maxHeight=150;maxWidth=225",
-            name:"Apline-S-Series 1 Car Tweeters (Pairs)-Black",
-            price:899 
+            Image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6354/6354960_sd.jpg;maxHeight=150;maxWidth=225",
+            name: "Apline-S-Series 1 Car Tweeters (Pairs)-Black",
+            price: 899
         },
         {
-            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6479/6479707_sd.jpg;maxHeight=150;maxWidth=225",
-            name:"Amazon-50 Class 4- Series 4K UHD Smart Fire TV",
-            price:319 
+            Image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6479/6479707_sd.jpg;maxHeight=150;maxWidth=225",
+            name: "Amazon-50 Class 4- Series 4K UHD Smart Fire TV",
+            price: 319
         },
         {
-            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1634/1634012_sd.jpg;maxHeight=150;maxWidth=225",
-            name:"Sony-Alpha a7 II full Frame Mirrorless Video Camera with 28-70mm",
-            price:1599 
+            Image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1634/1634012_sd.jpg;maxHeight=150;maxWidth=225",
+            name: "Sony-Alpha a7 II full Frame Mirrorless Video Camera with 28-70mm",
+            price: 1599
         },
         {
-            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5900/5900299_sd.jpg;maxHeight=150;maxWidth=225",
-            name:"Maytag-5.0 Cu. ft. self-cleaning Freestanding Finger Resistant",
+            Image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5900/5900299_sd.jpg;maxHeight=150;maxWidth=225",
+            name: "Maytag-5.0 Cu. ft. self-cleaning Freestanding Finger Resistant",
             price: 7999
         },
         {
-            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6452/6452913_sd.jpg;maxHeight=150;maxWidth=225",
-            name:"ASUS-ROG Zephyrus 14 Gaming Laptop-AMD Ryzen 9-16GB",
-            price:15498 
+            Image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6452/6452913_sd.jpg;maxHeight=150;maxWidth=225",
+            name: "ASUS-ROG Zephyrus 14 Gaming Laptop-AMD Ryzen 9-16GB",
+            price: 15498
         },
         {
-            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6432/6432058_sd.jpg;maxHeight=150;maxWidth=225",
-            name:"Sony-Alpha 7C Full-frame Murroless Camera-Sliver",
-            price:1799 
+            Image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6432/6432058_sd.jpg;maxHeight=150;maxWidth=225",
+            name: "Sony-Alpha 7C Full-frame Murroless Camera-Sliver",
+            price: 1799
         },
         {
-            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6479/6479708_sd.jpg;maxHeight=150;maxWidth=225",
-            name:"Amazon-55 Class 4-Series 4K UHD Smart Fire TV",
-            price:3499 
+            Image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6479/6479708_sd.jpg;maxHeight=150;maxWidth=225",
+            name: "Amazon-55 Class 4-Series 4K UHD Smart Fire TV",
+            price: 3499
         },
         {
-            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5852/5852906_sd.jpg;maxHeight=150;maxWidth=225",
-            name:"Nikon-D7500 Dslr 4k Video Camera (Body Only)-Black",
+            Image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5852/5852906_sd.jpg;maxHeight=150;maxWidth=225",
+            name: "Nikon-D7500 Dslr 4k Video Camera (Body Only)-Black",
             price: 9999
         },
         {
-            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6461/6461977_sd.jpg;maxHeight=150;maxWidth=225",
-            name:"Lenevo Ideapad 3 15.6 FHD Touch Screen Laptop-Intel Core i5",
-            price:5499 
+            Image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6461/6461977_sd.jpg;maxHeight=150;maxWidth=225",
+            name: "Lenevo Ideapad 3 15.6 FHD Touch Screen Laptop-Intel Core i5",
+            price: 5499
         },
         {
-            Image:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1261/1261402_sd.jpg;maxHeight=150;maxWidth=225",
-            name:"Logitech-MK550 Ergonomic Full-size Wirelless Alkaline Wave",
-            price:4999 
+            Image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1261/1261402_sd.jpg;maxHeight=150;maxWidth=225",
+            name: "Logitech-MK550 Ergonomic Full-size Wirelless Alkaline Wave",
+            price: 4999
         }
-    
+
     ];
 
-    localStorage.setItem("slider3",JSON.stringify(slider_data))
-   var slider= JSON.parse(localStorage.getItem("slider3"))||[];
-  
-   slider.map(function(el){
-   var sliderbox=document.createElement("div");
-   var imag=document.createElement("img");
-   imag.src=el.Image;
-   var name=document.createElement("p");
-   name.textContent=el.name;
-   var price=document.createElement("p");
-   price.textContent=el.price;
-   var main=document.querySelector("#mainslider");
-   sliderbox.append(imag,name,price);
-   main.append(sliderbox);
-   })
+    localStorage.setItem("slider3", JSON.stringify(slider_data))
+    var slider = JSON.parse(localStorage.getItem("slider3")) || [];
+
+    slider.map(function (el) {
+        var sliderbox = document.createElement("div");
+        var imag = document.createElement("img");
+        imag.src = el.Image;
+        var name = document.createElement("p");
+        name.textContent = el.name;
+        var price = document.createElement("p");
+        price.textContent = el.price;
+        var main = document.querySelector("#mainslider");
+        sliderbox.append(imag, name, price);
+        main.append(sliderbox);
+    })
 
 
-   var aerro=document.querySelector("#aerrobtn") ;
-  aerro.addEventListener("click",runslider);
-  var x;
-  function runslider(){
-     aerro=document.querySelector("#aerrobtn") ;
-    var slider= JSON.parse(localStorage.getItem("slider3"))||[];
-    var i=0;
-    x=setInterval(function(){
-        if(i===slider.length){
-            i=0;
-        }
-        aerro.src=slider[i];
-  
-        console.log(i);
-        i++;
-    },1000)
-  }
+    var aerro = document.querySelector("#aerrobtn");
+    aerro.addEventListener("click", runslider);
+    var x;
+    function runslider() {
+        aerro = document.querySelector("#aerrobtn");
+        var slider = JSON.parse(localStorage.getItem("slider3")) || [];
+        var i = 0;
+        x = setInterval(function () {
+            if (i === slider.length) {
+                i = 0;
+            }
+            aerro.src = slider[i];
+
+            console.log(i);
+            i++;
+        }, 1000)
+    }
 </script>
- 
+
 <!-- --------------------Footer ---- start------------------------------- -->
 
 
- 
+
 <script type="module">
     import Footer from "./Components/Footer.js";
     console.log(Footer);
-    var box=document.querySelector("#footer");
-    box.innerHTML=Footer();
-  </script>
-
-  <!-- Footer ends -->
-
-
-  <!-- --------------------------inputbox-----searching---start--------------------------- -->
-        
-   <script>
-    var search=document.querySelector("#inputbox1").vlaue;
-    search.addEventListener("click",searchdata)
-    function searchdata(){
-       
-       
-    console.log(searchitems);
-       
-      }      
+    var box = document.querySelector("#footer");
+    box.innerHTML = Footer();
 </script>
 
-   <!-- --------------------------inputbox-----searching-------ends----------------------- -->
+<!-- Footer ends -->
+
+
+<!-- --------------------------inputbox-----searching---start--------------------------- -->
+
+<script>
+    var search = document.querySelector("#inputbox1").vlaue;
+    search.addEventListener("click", searchdata)
+    function searchdata() {
+
+
+        console.log(searchitems);
+
+    }      
+</script>
+
+<!-- --------------------------inputbox-----searching-------ends----------------------- -->
 
 
 
-   <script type="module">
-       import header from "./Components/header.js";
-       var headerdata=document.querySelector("#header");
-       headerdata.innerHTML=header();
-   </script>
+<script type="module">
+    import header from "./Components/header.js";
+    var headerdata = document.querySelector("#header");
+    headerdata.innerHTML = header();
+</script>
