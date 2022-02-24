@@ -14,8 +14,12 @@ function Header(){
 
             </div>
             <div id="inputbox">
-                <input id="inputbox1" type="text" placeholder="Search Best Buy "><i
-                    class="fa-solid fa-magnifying-glass"></i></input>
+                <div>
+                <input id="inputbox1" type="text" placeholder="Search Best Buy "></div>
+               <div class="inputstyle">
+                  
+               <i class="fa-solid fa-magnifying-glass "></i></input>
+               </div>
             </div>
         </div>
         <div id="logo2">
@@ -35,14 +39,15 @@ function Header(){
             <div id="lowbox1d">Credit Cards</div>
             <div id="lowbox1e">Gift Cards</div>
             <div id="lowbox1f">Gift Ideas</div>
-            <div id="lowbox1g">More<i class="fa-solid fa-chevron-down"></i></div>
+            <div id="lowbox1g"><button id="moreoption">More<i class="fa-solid fa-chevron-down"></i></button>
+            
         </div>
     
         <div id="lowbox2">
-            <div id="account">Account<i class="fa-solid fa-chevron-down"></i></div>
-            <div id="recently">Recently Viewed<i class="fa-solid fa-chevron-down"></i></div>
-            <div id="order">order status<i class="fa-solid fa-chevron-down"></i></div>
-            <div id="saved">Saved Items<i class="fa-solid fa-chevron-down"></i></div>
+            <div id="account"><button id="Account">Account<i class="fa-solid fa-chevron-down"></i></button> </div>
+            <div id="recently"><button id="recently"> Recently Viewed<i class="fa-solid fa-chevron-down"></i></button></div>
+            <div id="order"><button id="order"> order status<i class="fa-solid fa-chevron-down"></i></button></div>
+            <div id="saved"><button id="saved">Saved Items<i class="fa-solid fa-chevron-down"></i></button> </div>
         </div>
     </div>
 </div>`;
