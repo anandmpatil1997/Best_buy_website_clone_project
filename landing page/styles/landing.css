@@ -45,7 +45,7 @@ body {
 #uprightslider {
     border: 1px transparent solid;
     background-color: white;
-    width: 92%;
+    width: 90%;
     margin: 5% 0% 5% 3%;
     padding-left: 4%;
     height: 50%;
@@ -54,7 +54,7 @@ body {
 #lowersliderbox {
     background-color: white;
     border: 1px transparent solid;
-    width: 92%;
+    width: 94%;
     margin: 5% 0% 5% 3%;
     height: 35%;
 }
@@ -215,9 +215,11 @@ a {
 #slider7 {
     /* display: flex; */
     border: 0px solid sienna;
+    border-bottom: 0px solid red;
+    border-top: 0px;
     margin-top: 4%;
     width: 99%;
-    height: 400px;
+    height: 430px;
 }
 
 #featuredtext,
@@ -286,10 +288,11 @@ a {
 #mainslider,
 .mainslider {
     display: flex;
-    border: 1px solid rgb(205, 210, 216);
+    border: 1px solid rgb(233, 236, 240);
     overflow-x: hidden;
     overflow-y: hidden;
-
+    border-bottom: 0px ;
+    border-top: 0px ;
     /* overflow-x:unset; */
     /* overflow-wrap: unset; */
     flex: 7;
@@ -451,3 +454,4 @@ a {
     border-radius: 5px;
     background-color: rgb(0, 70, 190);
 } */
+

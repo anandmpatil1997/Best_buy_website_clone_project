@@ -3,6 +3,12 @@ var smallslide = [{
     
 },
 {
+   imgURL:"https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-MMT-507165-220131_DER-f1b7aab3-a477-4449-88fd-ae697fa9ed9b.jpg;maxHeight=504;maxWidth=740",
+},
+{
+imgURL:"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6495/6495694_sd.jpg;maxHeight=150;maxWidth=225",
+},
+{
     imgURL: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6478/6478304cv11d.jpg;maxHeight=300;maxWidth=300",
 },
 {
