@@ -36,44 +36,65 @@
     color: white;
     font-size: 20px;
 }
+/* =============================================== */
 #slideimg{
-    display: flex;
+   
+    width: 100%;
+   
+
+}
+.mySlides {display:none;
     width: 100%;
     margin: auto;
-    justify-content: space-between;
-}
-#slideimg>div>img{
-    height: 70%;
-    width: 95%;
-}
-#slideimg>i{
-    margin-top:1%;
-    color:#001e73;
-    cursor: pointer;
-    font-weight:0;
-    font-size: 40px;
-}
-#slideimg>div>p{
-    font-family:"Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;
-    font-size:13px ;
-    color:#001e73;
-    font-weight:400 ;
-    line-height:17px ;
-    cursor: pointer;
-    text-align: center;
-}
-#slideimg>div>p:hover{
-    text-decoration: underline;
-}
-#slideimg>div{
-    width:9.5%;
-    height:200px;
-}
+    }
+    
+    .slideimg{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .slideimg>div{
+        height: 100%;
+        width:9%;
+        cursor: pointer;
+    }
+    .slideimg>div:hover{
+        border: 1px solid rgba(0, 0, 255, 0.534);
+    }
+    .slideimg>div>img{
+        width:80px;
+        height:80px;
+        margin-left:20%;
+    }
+    .slideimg>div>p{
+        text-align: center;
+        font-family: "Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;
+        color:#001e73;
+        font-size: 13px;
+    }
+    .slideimg>div>p:hover{
+        text-decoration: underline;
+    }
+    
+    #main{
+        height: 200px;
+        width: 100%;
+        display: flex;
+        border: 1px solid red;
+    }
+    #main>button{
+      
+        color:blue;
+        margin-left: 0%;
+        height: 5%;
+        background-color: transparent;
+        border: none;
+        margin-top: 5%;
 
+        
+    }
 
-#slideimg>div:hover{
-    border: 0.7px solid black;
-}
+/* ====================================================== */
 #feature_deal{
     grid-area:c;
 }
