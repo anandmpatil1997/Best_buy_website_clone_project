@@ -5,7 +5,7 @@ function Header(){
             <img id="logo1"
                 src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/BestBuy_Logo_2020-190616.png"
                 alt="logo">
-        </div>
+              </div>
         <div id="input">
 
             <div id="line">
@@ -23,12 +23,14 @@ function Header(){
             </div>
         </div>
         <div id="logo2">
+        <h2 id="nameshow"></h2>
             <div id="logotext">
-                <p>North Anchorage</p>
+            <p>North Anchorage</p>
             </div>
+           
             <div id="logocart"><button id="logocartbtn"><i
-                        class="fa-solid fa-cart-shopping "></i>Cart</button>
-            </div>
+                class="fa-solid fa-cart-shopping"></i>Cart</button>
+            </div><h1 id="count"></h1>
         </div>
     </div>
     <div id="lowbox">

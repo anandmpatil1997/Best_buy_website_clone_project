@@ -105,8 +105,8 @@
                    <div id="accountoption">
                        <p style="text-align: center;">Becoming a My Best Buy member comes with <br>
                            easy order tracking, rewars,offers and more.</p>
-                       <button id="accsign">Sign In</button><br>
-                       <button id="createacc">Create Account</button>
+                       <button id="accsign"><a href=""> Sign In</a></button><br>
+                       <button id="createacc"><a href="">Create Account</a></button>
                        <hr>
                        <div class="acc">
                            <div class="blue"><a href=""> Account</a></div>
@@ -233,7 +233,7 @@
                 <div id="uprightslider">
                     <h1>Today’s popular picks</h1>
                     <p>based on what’s trending</p>
-<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
                     <!-- first swaper---------------------------------------------> 
                   
 
@@ -246,7 +246,7 @@
                             <div class="slider-wrap1">
                                <div class="slider-main1" id="slidermain1">
                                    <div class="slideritem1">
-                                       <img class="swaper-img" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6469/6469397_sd.jpg;maxHeight=250;maxWidth=250" alt="">
+                                      <img class="swaper-img" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6469/6469397_sd.jpg;maxHeight=250;maxWidth=250" alt="">
                                        <p class="blue">Lenovo-IdeaPad3 HD touncscreen</p>
                                        <div id="stars">
                                         <div><i class="fa-solid fa-star"></i></div>
@@ -1634,8 +1634,13 @@ function next6(){
           slidermain6.prepend(swaperitem6[swaperitem6.length-1]);
          
     }
-
-
+    var cartcounter=document.querySelector("#count");
+    var cartdata=JSON.parse(localStorage.getItem("cart"))||[];
+    cartcounter.append(cartdata.length);
+ 
+    let usernameshow=document.querySelector("#nameshow");
+    let userid= localStorage.getItem("")||[];
+    usernameshow.append(userid); 
 </script>
 
 <!-- --------------------Footer ---- start------------------------------- -->
@@ -1658,9 +1663,7 @@ function next6(){
     var search = document.querySelector("#inputbox1").value;
     search.addEventListener("click", searchdata)
     function searchdata() {
-
-
-        console.log(searchitems);
+    console.log(searchitems);
 
     }      
 </script> -->
@@ -1771,6 +1774,46 @@ var drop3=document.querySelector("#recently");
        document.querySelector(" #menu_items").style.display="none";
      }
 
+// location for pages----------------------------------------------------------->
+    
+let topdeals=document.querySelector("#lowbox1a")
+topdeals.addEventListener("click",gototopdeals)
+function gototopdeals(){
+ window.location.href="sample.html";
+}
+
+let dealoftheday=document.querySelector("#lowbox1b")
+dealoftheday.addEventListener("click",gotodealofday)
+function gotodealofday(){
+    window.location.href="sample.html";
+}
+let Bestbuy=document.querySelector("#lowbox1c")
+Bestbuy.addEventListener("click",gotoBestbuy)
+function gotoBestbuy(){
+    window.location.href="sample.html";
+}
+let credit=document.querySelector("#lowbox1d")
+credit.addEventListener("click",gotocredit)
+function gotocredit(){
+    window.location.href="sample.html";
+}
+let giftcredit=document.querySelector("#lowbox1e")
+giftcredit.addEventListener("click",gotogiftcredit)
+function gotogiftcredit(){
+    window.location.href="sample.html";
+}
+let giftidea=document.querySelector("#lowbox1f")
+giftidea.addEventListener("click",gotogiftidea)
+function gotogiftidea(){
+    window.location.href="sample.html";
+}
+
+let cart=document.querySelector("#logocartbtn");
+cart.addEventListener("click",gotocart);
+function gotocart(){
+    alert("Wel-Come To Your Cart");
+    window.location.href="sample.html"
+}
 </script>
 
 
@@ -1778,10 +1821,17 @@ var drop3=document.querySelector("#recently");
 <!-- swiper -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="./scripts/swiper.js"></script>
-<script src="./scripts/swiper2.js"></script>
 <script src="./scripts/intervalslide.js"></script>
 <script src="./scripts/smallslider.js"></script>
 
+<script>
+    var gobyimage=document.querySelector(".slideritem1")
+    gobyimage.addEventListener("click",gobyimagetoanotherpage);
+    function gobyimagetoanotherpage(){
+        window.location.href="sample.html";
+        alert("This page redirect to you another page")
+    }
+</script>
 
 
 

@@ -38,4 +38,13 @@ function slider(){
         sliderDiv.append(image);
         i++;
       }, 2000);
+
+      
+    
+    }
+
+    var gotootherpage=document.querySelector("#leftsliderimg");
+    gotootherpage.addEventListener("click",pro);
+    function pro(){
+        window.location.href="sample.html"
     }

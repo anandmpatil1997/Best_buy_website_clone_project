@@ -215,7 +215,7 @@
       scrollbar-width: thin;
       position: absolute;
       background-color: rgb(255, 255, 255);
-      opacity: .9;
+      /* opacity: .9; */
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       margin-left:40% ;
       overflow: scroll;
