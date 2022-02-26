@@ -12,7 +12,7 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-var object2 = [
+var sliderbag = [
     {
         Image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464688_sd.jpg;maxHeight=150;maxWidth=225",
         name: "Level-Touch Edition App Smart Lock-Matte Black",
@@ -78,8 +78,8 @@ var object2 = [
 
 ];
 
-appendSponsered(object2)
-
+appendSponsered(sliderbag)
+// var bag=JSON.parse(localStorage.getItem("cartdata"));
 function appendSponsered(arr) {
     let x = ` `;
     arr.map((el) => {
@@ -89,7 +89,9 @@ function appendSponsered(arr) {
         alt="">
       <p><b>${el.name}</b></p>
       <h5>$ ${el.price} </h5>
-      <button><b>Add To Cart</b></button>
+     <a href="sample.html"> <button id="gotocart"><b>Go To Product</b></button></a>
+      
+ 
     </div>`
     });
     document.querySelector(".swiper-wrapper").innerHTML = x;

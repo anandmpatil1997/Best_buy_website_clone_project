@@ -47,7 +47,7 @@ function Header(){
     
         <div id="lowbox2">
             <div id="account"><button id="Account">Account<i class="fa-solid fa-chevron-down"></i></button> </div>
-            <div id="recently"><button id="recently"> Recently Viewed<i class="fa-solid fa-chevron-down"></i></button></div>
+            <div id="recently"><button id="recently">Recently view<i class="fa-solid fa-chevron-down"></i></button></div>
             <div id="order"><button id="order"> order status<i class="fa-solid fa-chevron-down"></i></button></div>
             <div id="saved"><button id="saved">Saved Items<i class="fa-solid fa-chevron-down"></i></button> </div>
         </div>
