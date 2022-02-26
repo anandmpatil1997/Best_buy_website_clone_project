@@ -10,7 +10,13 @@
 </head>
 <body>
     <div id="container">
-        <div id="header"></div>
+        <div id="header">
+            <div id="navbar"></div>
+            <div id="ad">
+                <img src="image\adimg.png" alt="">
+            </div>
+        </div>
+       
         <div id="slidebar">
             <span id="deal">Top Deals</span>
             <span>Today’s featured deals and top tech. Valid through 2/27/22.*</span>
@@ -29,29 +35,29 @@
                         <img src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/FeaturedDeals_Blue_Solid_Lg_RGB-104799.png;maxHeight=140;maxWidth=140" >
                            <p>Feature Deals</p>
                        </div>
-                        <div>
+                        <div onclick="gopropage()">
                             <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6479/6479683_sd.jpg;maxHeight=140;maxWidth=140">
-                        <p>Laptops & Computer</p>
+                        <p class="gotopro">Laptops & Computer</p>
                         </div>
                         <div>
                             <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6476/6476896_sd.jpg;maxHeight=140;maxWidth=140">
-                        <p>Tv &Projector</p>
+                        <p class="gotopro">Tv &Projector</p>
                         </div>
                         <div>
                             <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464307_sd.jpg;maxHeight=140;maxWidth=140">
-                        <p>Video Games</p>
+                        <p class="gotopro">Video Games</p>
                         </div>
                           <div>
                             <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6443/6443321_sd.jpg;maxHeight=140;maxWidth=140">
-                        <p>Apple</p>  
+                        <p class="gotopro">Apple</p>  
                         </div>
                         <div>
                             <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6471/6471291_sd.jpg;maxHeight=140;maxWidth=140">
-                        <p>Headphones</p>   
+                        <p class="gotopro">Headphones</p>   
                         </div>
                            <div>
                             <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6423/6423337_sd.jpg;maxHeight=140;maxWidth=140">
-                        <p>Cell Phones</p>   
+                        <p class="gotopro">Cell Phones</p>   
                         </div>
                           <div>
                             <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6444/6444494_sd.jpg;maxHeight=140;maxWidth=140">
@@ -337,7 +343,8 @@
         <!-- ============================= -->
         <div id="totalteach">
             <div id="first_div">
-                <div>
+              
+                <div id="shift">
                     <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/tt-color-logo-gl66402-91da81e0-6a26-4b0f-96c9-9cace52b7303.png" alt="totalteach">
                   <h2>The membership you and your tech deserve.</h2>
                   <p>Best Buy Totaltech™ provides 24/7/365 tech support, up to 24 months of product protection with active membership, free standard installation and so much more.</p>
@@ -409,10 +416,10 @@
                 <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6479/6479683_sd.jpg;maxHeight=120;maxWidth=120" alt="laptop">
                 <div>
                     <p>Next Top Deals Page</p>
-                    <p id="gotonext">Laptop and Computers</p>
+                    <h2 id="gotonext">Laptop & Computers</h2>
                    
                 </div>
-                <i class="fa fa-angle-right" style="font-size:55px;margin:5%;cursor: pointer;"></i>
+                <i class="fa fa-angle-right" style="font-size:55px;margin:5%;cursor: pointer;"onclick="gopropage()"></i>
             </div>
             <p id="topDealdealtis2">Top Deals details:</p>
             <p>*Prices and offers represent BestBuy.com pricing, are subject to change and may extend beyond the Top Deals end date. Product quantities are limited. Rainchecks are not available. In-store pricing may vary. <a href=""> Learn more about Top Deals.</a></p>
@@ -421,22 +428,4 @@
     </div>
 </body>
 </html>
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
+<script src="/topdeal.js"></script>
