@@ -217,7 +217,7 @@ function addtocart(elem) {
 }
 
 document.querySelector("#box2").addEventListener("click", function() {
-    window.location.href = "../cart/cart.html"
+    window.location.href = "../newcart/newcart.html"
 
 
     document.querySelector("#logo").addEventListener("click", function() {
