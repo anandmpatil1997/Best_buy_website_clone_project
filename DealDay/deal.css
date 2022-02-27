@@ -62,10 +62,10 @@ h1 {
     margin-left: 40px;
 }
 
-box {
+/* box {
     display: flex;
     justify-content: space-between;
-}
+} */
 
 /* h4,
 h3,
@@ -91,7 +91,7 @@ button {
     width: 120px;
     height: 30px;
     background-color: rgb(240, 236, 11);
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 
 #b1 {
