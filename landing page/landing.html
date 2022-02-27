@@ -106,11 +106,11 @@
                    <div id="accountoption">
                        <p style="text-align: center;">Becoming a My Best Buy member comes with <br>
                            easy order tracking, rewars,offers and more.</p>
-                       <button id="accsign"><a href="" style.color="whitesmoke"> Sign In</a></button><br>
-                       <button id="createacc"><a href=""  style.color="whitesmoke">Create Account</a></button>
+                    <button id="accsign">Sign In</button> <br>
+                      <a href="../signup.html"><button id="createacc">Create Account</button></a>
                        <hr>
                        <div class="acc">
-                           <div class="blue"><a href=""> Account</a></div>
+                           <div class="blue"><a href="../signup.html"> Account</a></div>
                            <div>Your info at a glance</div>
                        </div>
 
@@ -1601,6 +1601,17 @@
     import header from "./Components/header.js";
     var headerdata = document.querySelector("#header");
     headerdata.innerHTML = header();
+    let acc=document.querySelector("#accsign")
+    acc.addEventListener("click",gotosi)
+    function gotosi(){
+        window.location.href="../Login.html"
+    }
+    createacc
+    let cca=document.querySelector("#accsign")
+    cca.addEventListener("click",gotocre)
+    function gotocre(){
+        window.location.href="../signup.html"
+    }
     // var searchingdata = document.querySelector("#inputbox1").value;
     // searchingdata.addEventListener("",mainshow)
     var sear=document.querySelector("#searchdata")
