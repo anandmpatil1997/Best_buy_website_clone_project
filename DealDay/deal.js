@@ -217,5 +217,5 @@ function addtocart(elem) {
 }
 
 document.querySelector("#box2").addEventListener("click", function() {
-    window.location.pathname = "../cart/cart.html"
+    window.location.pathname = "..cart/cart.html"
 });

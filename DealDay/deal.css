@@ -11,7 +11,7 @@ body {
     color: white;
 }
 
-#head_left {
+#head_left1 {
     margin-left: 40px;
     margin-right: 600px;
 }
@@ -20,7 +20,7 @@ h1 {
     margin-bottom: 1px;
 }
 
-#head_right {
+#head_right1 {
     height: 40px;
     width: 100px;
     background-color: white;
