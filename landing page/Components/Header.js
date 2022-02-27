@@ -24,7 +24,7 @@ function Header(){
             </div>
         </div>
         <div id="logo2">
-        <h2 id="nameshow"></h2>
+        <p id="nameshow"></p>
             <div id="logotext">
             <p>North Anchorage</p>
             </div>

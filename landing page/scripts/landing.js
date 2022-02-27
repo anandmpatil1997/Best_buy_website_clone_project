@@ -58,11 +58,4 @@ function next6(){
     // var cartdata=JSON.parse(localStorage.getItem("cart"))||[];
     // cartcounter.append(cartdata.length);
  
-   
-    let userid=JSON.parse(localStorage.getItem("userdatabase"))||[];
-    userid.forEach(element => {
-      var name=document.createElement("h2");
-      name.textContent=element.username;
-      let usernameshow=document.querySelector("#nameshow");
-      usernameshow.append(name);
-  });
+  

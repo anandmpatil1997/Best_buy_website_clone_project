@@ -1768,13 +1768,13 @@ var drop3=document.querySelector("#recently");
 let topdeals=document.querySelector("#lowbox1a")
 topdeals.addEventListener("click",gototopdeals)
 function gototopdeals(){
- window.location.href="sample.html";
+ window.location.href="../topdeal.html";
 }
 
 let dealoftheday=document.querySelector("#lowbox1b")
 dealoftheday.addEventListener("click",gotodealofday)
 function gotodealofday(){
-    window.location.href="sample.html";
+    window.location.href="../DealDay/deal.html";
 }
 let Bestbuy=document.querySelector("#lowbox1c")
 Bestbuy.addEventListener("click",gotoBestbuy)
@@ -1801,8 +1801,15 @@ let cart=document.querySelector("#logocartbtn");
 cart.addEventListener("click",gotocart);
 function gotocart(){
     alert("Wel-Come To Your Cart");
-    window.location.href="sample.html"
+    window.location.href="../cart/cart.html"
 }
 
-
+var username=document.querySelector("#nameshow");
+let userid=JSON.parse(localStorage.getItem("userdatabase"))||[];
+    userid.forEach(element => {
+      var name=document.createElement("h2");
+      name.textContent=element.username;
+      let usernameshow=document.querySelector("#nameshow");
+      usernameshow.append(name);
+  });
 </script>
