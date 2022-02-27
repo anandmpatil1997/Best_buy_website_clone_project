@@ -43,8 +43,8 @@ function slider(){
     
     }
 
-    var gotootherpage=document.querySelector("#leftsliderimg");
-    gotootherpage.addEventListener("click",pro);
-    function pro(){
-        window.location.href="sample.html"
-    }
+    // var gotootherpage=document.querySelector("#leftsliderimg");
+    // gotootherpage.addEventListener("click",pro);
+    // function pro(){
+    //     window.location.href="sample.html"
+    // }

@@ -21,6 +21,7 @@
             <!-- add header here -->
         </div>
         <!-- menu dropdown starts -->
+        <div id="searchpacket"></div>
         <div id="menu_items">
             <div class="item">
             <div >Deals</div>
@@ -105,8 +106,8 @@
                    <div id="accountoption">
                        <p style="text-align: center;">Becoming a My Best Buy member comes with <br>
                            easy order tracking, rewars,offers and more.</p>
-                       <button id="accsign"><a href=""> Sign In</a></button><br>
-                       <button id="createacc"><a href="">Create Account</a></button>
+                       <button id="accsign"><a href="" style.color="whitesmoke"> Sign In</a></button><br>
+                       <button id="createacc"><a href=""  style.color="whitesmoke">Create Account</a></button>
                        <hr>
                        <div class="acc">
                            <div class="blue"><a href=""> Account</a></div>
@@ -1577,71 +1578,11 @@
 
 </html>
 
-<script>
-var slidermain1=document.getElementById("slidermain1");
-var swaperitem1=document.getElementsByClassName("slideritem1");
-function swapernext(){
-    slidermain1.append(swaperitem1[0]);
-    
-    }
-
-    function swaperpre1(){
-          slidermain1.prepend(swaperitem1[swaperitem1.length-1]);
-    }
-
-
-    var slidermain2=document.getElementById("slidermain2");
-var swaperitem2=document.getElementsByClassName("slideritem2");
-function next2(){
-    slidermain2.append(swaperitem2[0]);
-     }
-
-    function pri2(){
-          slidermain2.prepend(swaperitem2[swaperitem2.length-1]);
-         
-    }
-
-    var slidermain7=document.getElementById("slidermain7");
-var swaperitem7=document.getElementsByClassName("slideritem7");
-function next7(){
-    slidermain7.append(swaperitem7[0]);
-     }
-
-    function pri7(){
-          slidermain7.prepend(swaperitem7[swaperitem7.length-1]);
-         
-    }
-
-    var slidermain5=document.getElementById("slidermain5");
-var swaperitem5=document.getElementsByClassName("slideritem5");
-function next5(){
-    slidermain5.append(swaperitem5[0]);
-     }
-
-    function pri5(){
-          slidermain5.prepend(swaperitem5[swaperitem5.length-1]);
-         
-    }
-
-
-    var slidermain6=document.getElementById("slidermain6");
-var swaperitem6=document.getElementsByClassName("slideritem6");
-function next6(){
-    slidermain6.append(swaperitem6[0]);
-     }
-
-    function pri6(){
-          slidermain6.prepend(swaperitem6[swaperitem6.length-1]);
-         
-    }
-    var cartcounter=document.querySelector("#count");
-    var cartdata=JSON.parse(localStorage.getItem("cart"))||[];
-    cartcounter.append(cartdata.length);
- 
-    let usernameshow=document.querySelector("#nameshow");
-    let userid= localStorage.getItem("")||[];
-    usernameshow.append(userid); 
-</script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./scripts/swiper.js"></script>
+<script src="./scripts/intervalslide.js"></script>
+<script src="./scripts/smallslider.js"></script>
+<script src="./scripts/landing.js"></script>
 
 <!-- --------------------Footer ---- start------------------------------- -->
 
@@ -1656,26 +1597,77 @@ function next6(){
 
 <!-- Footer ends -->
 
-
-<!-- --------------------------inputbox-----searching---start--------------------------- -->
-
-<!-- <script>
-    var search = document.querySelector("#inputbox1").value;
-    search.addEventListener("click", searchdata)
-    function searchdata() {
-    console.log(searchitems);
-
-    }      
-</script> -->
-
-<!-- --------------------------inputbox-----searching-------ends----------------------- -->
-
-
-
 <script type="module">
     import header from "./Components/header.js";
     var headerdata = document.querySelector("#header");
     headerdata.innerHTML = header();
+    // var searchingdata = document.querySelector("#inputbox1").value;
+    // searchingdata.addEventListener("",mainshow)
+    var sear=document.querySelector("#searchdata")
+    sear.addEventListener("click",ser)
+    sear.addEventListener("dblclick",dblser)    
+    function dblser(){
+        var showblock=document.querySelector("#searchpacket").style.display="none";
+        
+    }
+    function ser(){
+        var showblock=document.querySelector("#searchpacket").style.display="block";
+        var searchingdata = document.querySelector("#inputbox1").value;
+        async function indata() {
+            try {
+               
+             
+                 var res=await fetch(`https://api.unsplash.com/search/photos?query=${searchingdata}&client_id=4705H5JkxqWRHGwwhn3I4x3Vsc2Dc1cgDUP8xhXoS1g`);
+              var serdata = await res.json();
+              appenddata(serdata.results)
+               console.log(serdata.results) 
+            }
+            catch(err){
+                console.log(err);
+            }
+
+         }
+         indata()
+   
+    }
+        
+    
+            //    console.log(searchingdata)
+   
+   
+  
+        // }
+      
+    
+    function appenddata(result){
+        result.map(element => {
+            var bagsearchdata=[];
+            var imagebox=document.createElement("div");
+            imagebox.setAttribute("id","searchitm")
+            var image=document.createElement("img");
+            var imagebag=document.createElement("div");
+            var textbox=document.createElement("div");
+            var prices=document.createElement("h5");
+            image.src=element.urls.small_s3;
+            image.setAttribute("id","imgs");
+            var name=document.createElement("h4");
+            name.setAttribute("id","blue");
+            name.textContent=element.alt_description;
+            prices.textContent=`Price: ${(Math.floor(Math.random()*1000))}`
+            imagebag.append(image); 
+            textbox.append(name, prices); 
+            imagebox.append(imagebag,textbox);
+            imagebox.addEventListener("click",()=>{
+                bagsearchdata.push(element);
+                localStorage.setItem("selected_items",JSON.stringify(bagsearchdata));
+                 window.location.href="search.html"
+            }) ;
+           
+            document.querySelector("#searchpacket").append(imagebox);
+           });
+          
+}
+
 
 
     var more=document.querySelector("#moreoption");
@@ -1695,7 +1687,6 @@ function next6(){
      var drop2=document.querySelector("#Account");
      drop2.addEventListener("click",dropdata2);
      function dropdata2(){
-         console.log("fsf")
        document.querySelector("#accountoption").style.display="block";
      }
       drop2=document.querySelector("#Account");
@@ -1718,7 +1709,6 @@ function next6(){
 var drop3=document.querySelector("#recently");
      drop3.addEventListener("click",dropdata3);
      function dropdata3(){
-         console.log("fsf")
        document.querySelector("#recently_viewed_items").style.display="block";
      }
       drop3=document.querySelector("#recently");
@@ -1733,7 +1723,6 @@ var drop3=document.querySelector("#recently");
      var drop4=document.querySelector("#order");
      drop4.addEventListener("click",dropdata4);
      function dropdata4(){
-         console.log("fsf")
        document.querySelector("#order_status").style.display="block";
      }
       drop3=document.querySelector("#order");
@@ -1771,7 +1760,7 @@ var drop3=document.querySelector("#recently");
       drop6=document.querySelector("#menu");
      drop6.addEventListener("dblclick",remove6);
      function remove6(){
-       document.querySelector(" #menu_items").style.display="none";
+       document.querySelector("#menu_items").style.display="none";
      }
 
 // location for pages----------------------------------------------------------->
@@ -1814,35 +1803,6 @@ function gotocart(){
     alert("Wel-Come To Your Cart");
     window.location.href="sample.html"
 }
+
+
 </script>
-
-
-
-<!-- swiper -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="./scripts/swiper.js"></script>
-<script src="./scripts/intervalslide.js"></script>
-<script src="./scripts/smallslider.js"></script>
-
-<script>
-    var gobyimage=document.querySelector(".slideritem1")
-    gobyimage.addEventListener("click",gobyimagetoanotherpage);
-    function gobyimagetoanotherpage(){
-        window.location.href="sample.html";
-        alert("This page redirect to you another page")
-    }
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-

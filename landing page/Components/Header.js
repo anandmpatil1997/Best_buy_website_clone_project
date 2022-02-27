@@ -2,9 +2,9 @@ function Header(){
     return `   <div id="box">
     <div id="upbox">
         <div id="logo">
-            <img id="logo1"
+          <a href="landing.html">  <img id="logo1"
                 src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/BestBuy_Logo_2020-190616.png"
-                alt="logo">
+                alt="logo"></a>
               </div>
         <div id="input">
 
@@ -14,11 +14,12 @@ function Header(){
 
             </div>
             <div id="inputbox">
-                <div>
-                <input id="inputbox1" type="text" placeholder="Search Best Buy "></div>
-               <div class="inputstyle">
+                 <div>
+                 <input id="inputbox1"  type="text" placeholder="Search Best Buy "></div>
+               
+                <div class="inputstyle">
                   
-               <i class="fa-solid fa-magnifying-glass "></i></input>
+            <button id="searchdata"><i class="fa-solid fa-magnifying-glass "></i></button>
                </div>
             </div>
         </div>
