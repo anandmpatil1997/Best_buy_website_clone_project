@@ -1,166 +1,208 @@
-  
+var data = [{
+
+    image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6407/6407659_sd.jpg;maxHeight=640;maxWidth=550",
+    name: "Insignia - 70'' class F30 Series LED 4K UHD Smart Fire TV",
+    review: "****(554)",
+    price: "$549.99",
+    save: "Save $100",
+    act_price: "Was $649.99",
+    deal: "Deal has ended in 5 hrs"
+
+}, {
+
+    image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6385/6385840_sd.jpg;maxHeight=640;maxWidth=550",
+    name: "Insignia -35-Pint Dehumidifier - White",
+    review: "*****(628)",
+    price: "$159.99",
+    save: "Save $60",
+    act_price: "Was $219.99",
+    deal: "Deal has ended in 6 hrs"
+
+},
+{
+
+    image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6405/6405080_sd.jpg;maxHeight=640;maxWidth=550",
+    name: "Schwin - 270 Recumbent Exercise Bike - Black",
+    review: "****(309)",
+    price: "$499.99",
+    save: "Save $300",
+    act_price: "Was $799.99",
+    deal: "Deal has ended in 6 hrs"
+
+},
+{
+    image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6426/6426025_sd.jpg;maxHeight=640;maxWidth=550 ",
+    name: "Aeris Cleantec - Aair 3-in-1 Pro HEPA Air Purifier -Graphite ",
+    review: "****(50)",
+    price: "$699.99",
+    save: "Save $300",
+    act_price: "Was $999.99",
+    deal: "Deal has ended 6:40:54"
+
+}, {
+
+    image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6369/6369455_sd.jpg;maxHeight=640;maxWidth=550",
+    name: "PowerXL -7OT Digital Air Fryer - Black",
+    review: "*****(297)",
+    price: "$79.99",
+    save: "Save $70",
+    act_price: "Was $149.99",
+    deal: "Deal has ended 6:44:47"
+
+}, {
+
+    image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6709/6709101_rd.jpg;maxHeight=640;maxWidth=550",
+    name: "Cuiaisnart -12 PC Knife Set - Multi",
+    review: "*****(4652)",
+    price: "$12.99",
+    save: "Save $37",
+    act_price: "Was $49.99",
+    deal: "Deal has ended 6:43:20"
+
+}, {
+
+    image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6380/6380827_sd.jpg;maxHeight=200;maxWidth=300",
+    name: "Save 42% or 47% on select SanDisk 128GB or 256GB flash drives.",
+    review: "",
+    price: "",
+    save: "",
+    act_price: "",
+    deal: "Shop Now"
+
+}, {
+
+    image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6346/6346822_sd.jpg;maxHeight=640;maxWidth=550",
+    name: "SanDisk -Ultra PLUS 32GB microSDHC UHS-I Memory Card",
+    review: "*****(2967)",
+    price: "$10.99",
+    save: "Save $7",
+    act_price: "Was $17.99",
+    deal: "Deal has ended 6:40:19"
+
+}, {
+
+    image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6482/6482340_sd.jpg;maxHeight=640;maxWidth=550",
+    name: "Winegard -Extreme 2.0 High Performance Outdoor Wi-Fi Range Extender",
+    review: "****(30)",
+    price: "$319.99",
+    save: "Save $80",
+    act_price: "Was $399.99",
+    deal: "Deal has ended 6:39:02"
+}, {
+
+    image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6486/6486857_sd.jpg;maxHeight=640;maxWidth=550",
+    name: "bObaweep - PetHair Vision PLUS Wi-Fi Connected Robot Vacuum & Mop - Beech ",
+    review: "****(34)",
+    price: "$259.00",
+    save: "Save $640",
+    act_price: "Was $899.00",
+    deal: "Deal has ended 6:36:55"
+
+}, {
+
+    image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6385/6385840_sd.jpg;maxHeight=640;maxWidth=550",
+    name: "Insignia -35-Pint Dehumidifier -White",
+    review: "*****(628)",
+    price: "$159.99",
+    save: "Save $60",
+    act_price: "Was $219.99",
+    deal: "Deal has ended 6:35:42"
+
+}, {
+
+    image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6426/6426027_sd.jpg;maxHeight=640;maxWidth=550",
+    name: "Aeria Cleantac -Aair 3-in-1 Pro HEPA Air Purifier -Graphite",
+    review: "****(50)",
+    price: "$699.99",
+    save: "Save $300",
+    act_price: "Was $999.99",
+    deal: "Deal has ended 6:33:45"
+
+}, {
+
+    image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6473/6473905_sd.jpg;maxHeight=640;maxWidth=550",
+    name: "Beate by Dr. Dre - Greek squad Certified Refurbished Beats studio Buda Totally Wireless Noise Cancelling Earohones -White",
+    review: "****(177)",
+    price: "$74.99",
+    save: "Save $75",
+    act_price: "Was $149.99",
+    deal: "Deal has ended 6:31:37"
+
+}, {
+
+    image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6482/6482997_sd.jpg;maxHeight=640;maxWidth=550",
+    name: "Perfect Practice - Golf Putting Mat, Standard Edition and Putting Alignment Mirror Bundle-Multi",
+    review: "*****(5)",
+    price: "$134.99",
+    save: "Save $50",
+    act_price: "Was $184.99",
+    deal: "Deal has ended 6:30:01"
+
+}, {
+
+    image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6457/6457697_sd.jpg;maxHeight=200;maxWidth=300",
+    name: "Star Wara -Galactic Snackin' Grogu",
+    review: "*****(116)",
+    price: "$34.99",
+    save: "Save $50",
+    act_price: "Was $84.99",
+    deal: "Deal has ended 6:28:21"
+}
+];
+
+// var data =JSON.parse(localStorage.getItem("data"));
+var cartarr=JSON.parse(localStorage.getItem("cartitem"))||[];
+setdata(data);
 
 
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 6,
-        centeredSlides: false,
-        spaceBetween: 30,
-        pagination: {
-            el: ".swiper-pagination",
-            type: "none",
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-
-    let object2 = [
-        {
-            image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6452/6452961_sd.jpg;maxHeight=640;maxWidth=550",
-            span: "",
-            detail: "LG - 3.1-Channel 420W Wireless DTS Virtual:X ",
-        }, {
-            image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6450/6450295_rd.jpg;maxHeight=640;maxWidth=550",
-            span: "",
-            detail: "Sanus - Advanced  4D TV Wall Mount TVs 42 ",
-        },  {
-            image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6331/6331611_rd.jpg;maxHeight=640;maxWidth=550",
-            span: "",
-            detail: "Sanus - Premium Series Advanced Tilt 4D Mount for TVs 42 Black Black Metal color Soundbar",
-        }, {
-            image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1501/1501144_sd.jpg;maxHeight=640;maxWidth=550",
-            span: "Hand Towel ",
-            detail: "Legrand - In-Wall Flat Screen White",
-        }, {
-            image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5463/5463303ld.jpg;maxHeight=640;maxWidth=550",
-            span: "",
-            detail: "Sanus - Premium Series for Most TVs 32-64 up to 150 lbs - Black",
-        }, {
-            image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6353/6353060_sd.jpg;maxHeight=640;maxWidth=550",
-            span: "",
-            detail: "Rocketfish™ - Full-Motion TV Wall Mount for Most 40 - 75 TVs - Black",
-        }, {
-            image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6451/6451333_sd.jpg;maxHeight=640;maxWidth=550",
-            span: "Cotton Wash Cloth",
-            detail: "Best Buy essentials™ - Full Motion TV Wall Mount for 47–84 TVs - Black",
-        }, {
-            image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/9881/9881868_rd.jpg;maxHeight=640;maxWidth=550",
-            span: "",
-            detail: "Rocketfish™ - Tilting TV Wall Mount for Most 32-75 TVs - Black",
-        }, {
-            image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6361/6361807_sd.jpg;maxHeight=640;maxWidth=550",
-            span: "",
-            detail: "Sanus - Mount for Sonos Beam Soundbar (Gen 1, 2) - Black",
-        }, {
-            image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6452/6452961_sd.jpg;maxHeight=640;maxWidth=550",
-            span: "",
-            detail: "LG 3.1.2 Channel Soundbar with Dolby Atmos Soundbar (Gen 1, 2)",
-        },
-        {
-            image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6406/6406935_sa.jpg;maxHeight=640;maxWidth=550",
-            span: "",
-            detail: "Best Buy® - Totaltech™ Yearly Membership  (Gen 1, 2) Premium  Membership",
-        },
-        {
-            image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6354/6354301_rd.jpg;maxHeight=640;maxWidth=550",
-            span: "",
-            detail: "Rocketfish™ - Universal Soundbar Mounting System - Black",
-        },
-        {
-            image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6332/6332693ld.jpg;maxHeight=640;maxWidth=550",
-            span: "",
-            detail: "Sanus - Premium Series - Black Brushed Metal Advance  Premium Series",
-        },
-        {
-            image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3720/3720011_sd.jpg;maxHeight=640;maxWidth=550",
-            span: "",
-            detail: "AudioQuest - Ocean 5' 4K-8K-10K 48Gbps In-Wall HDMI Cable - Blue/Black",
-        },
-        {
-            image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/9881/9881868_rd.jpg;maxHeight=640;maxWidth=550",
-            span: "",
-            detail: "Rocketfish™ - Tilting TV Wall Mount for Most 32-75 TVs - Black",
-        }, {
-            image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6361/6361807_sd.jpg;maxHeight=640;maxWidth=550",
-            span: "",
-            detail: "Sanus - Mount for Sonos Beam Soundbar (Gen 1, 2) - Black color Soundbar",
-        }, {
-            image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6452/6452961_sd.jpg;maxHeight=640;maxWidth=550",
-            span: "",
-            detail: "LG 3.1.2 Channel Soundbar with Dolby Atmos Soundbar (Gen 1, 2) Soundbar",
-        },
-        {
-            image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6406/6406935_sa.jpg;maxHeight=640;maxWidth=550",
-            span: "",
-            detail: "Best Buy® - Totaltech™ Yearly Membership  Advance  Premium Series",
-        },
-    ]
-
-    appendSponsered(object2)
-
-    function appendSponsered(arr) {
-        let x = ` `;
-        arr.map((el) => {
-            x += `  <div class="swiper-slide">
-          <img
-            src= ${el.image}
-            alt="" width="75px" height="65px">
-          <p><b>${el.span}</b> ${el.detail}</p>
-          <h5>$ ${Math.floor(Math.random() * 2000) + 500} </h5>
-          <button><b>Add To Cart</b></button>
-        </div>`
-        });
-        document.querySelector(".swiper-wrapper").innerHTML = x;
-    }
-     var sum=0;
-
-    var div3=document.getElementById("div3prod").innerHTML;
-
-    var arr=JSON.parse(localStorage.getItem("cartitem"))||[];
-    
-    arr.map((elem)=>{
-       let div=document.createElement("div");
-       div.id="div11"
-
-       let image=document.createElement("img");
-       image.setAttribute("id","proimg");
-       image.src=elem.image;
-        
-       let div4=document.createElement("p");
-       div4.innerHTML=`×`
-       div4.style.top="0px"
-       div4.className="logo"
+function setdata(data){
+var box=  document.getElementById("box2").innerHTML;
+box="";
+data.forEach(function(elem){
 
 
-       let p =document.createElement("p");
-       p.setAttribute("id","texthover");
-       p.innerText=elem.name;
+    var maindiv =document.createElement("div");
 
-       let price=document.createElement("p");
-    //    price.setAttribute("","");
-       price.innerText=elem.price;
-       var x=elem.price.split("$");
-       sum+=Number(x[1]);
+    var image=document.createElement("img");
+    image.src=elem.image;
+
+    var name=document.createElement("p");
+    name.textContent=elem.name;
+
+    var h5 = document.createElement("p");
+    h5.innerHTML = `&#9733&#9733&#9733&#9733&#9734`;
+    h5.style.color="rgb(255, 195, 31)";
+    h5.style.fontSize="20px"
+
+    var price=document.createElement("p");
+    price.textContent=elem.price;
+
+    var save=document.createElement("p");
+    save.innerText="save";
+    save.style.background="brown";
+    save.style.color="white"
+    save.style.width="40px"
+
+    var p2 =document.createElement("p");
+    p2.innerText=elem.act_price;
+     
+     var div3=document.createElement("div");
+     div3.setAttribute("id","myflex")
+
+    var deal=document.createElement("p");
+    deal.innerText=elem.deal;
 
 
-       let h5 = document.createElement("p");
-       h5.innerHTML = `&#9733&#9733&#9733&#9733&#9734`;
-       h5.style.color="rgb(255, 195, 31)";
-       h5.style.fontSize="20px"
-
-       let save=document.createElement("button");
-       save.setAttribute("id","mybtn");
-       save.innerText=elem.save;
-
-      div.append(image,div4,p,h5,price,save);
-      document.getElementById("div3prod").append(div);
-    
+    var btn=document.createElement("button");
+    btn.innerText="Add to Cart";
+    maindiv.addEventListener("click",function(){
+        addtocart(elem);
     })
-   
-document.getElementById("paisahipaisa").innerHTML=`$ ${sum}`
-document.getElementById("paisa").innerHTML=`$ ${sum-100}`
+ div3.append(save,p2)
+maindiv.append(image,name,h5,price,div3,deal,btn);
+document.getElementById("box2").append(maindiv);
 
+<<<<<<< Updated upstream
 localStorage.setItem("paisa",sum)
  function movetopayment(){
      window.location.href="../payment/payment.html"
@@ -172,5 +214,15 @@ localStorage.setItem("paisa",sum)
 //      window.location.href="../landing page/landing.html"
 //  }
 //  ===========================================
+=======
+>>>>>>> Stashed changes
 
+})
+}
 
+function addtocart(elem){
+ console.log(elem);
+ cartarr.push(elem);
+ localStorage.setItem("cartitem",JSON.stringify(cartarr));
+ alert("your product is added succesfully");
+}

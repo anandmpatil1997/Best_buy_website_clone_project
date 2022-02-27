@@ -410,6 +410,10 @@
             var imagevr = document.createElement("img");
             imagevr.setAttribute("src", data.imgUrl);
             imagevr.id = "imagevr";
+            // imagevr.addEventListener("click","gotodeal")
+            // function gotodeal(){
+            //     window.location.href="../DealDay/deal.html"
+            // }
             var datadiv = document.createElement("div");
             datadiv.id = "datadiv"
             var pickup = document.createElement("p");
@@ -505,6 +509,18 @@
         alert("Wel-Come To Your Cart");
         window.location.href = "../cart/cart.html"
     }
+    let dealoftheday=document.querySelector("#lowbox1b")
+dealoftheday.addEventListener("click",gotodealofday)
+function gotodealofday(){
+    window.location.href="../DealDay/deal.html";
+}
+
+let topdeals=document.querySelector("#lowbox1a")
+topdeals.addEventListener("click",gototopdeals)
+function gototopdeals(){
+ window.location.href="../topdeal.html";
+}
+
 
 </script>
 

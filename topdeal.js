@@ -18,5 +18,5 @@ function showDivs(n) {
 }
 // ========================
 function gopropage(){
-    window.location.href="h.html"
+    window.location.href="../productpage/productpage.html"
 }

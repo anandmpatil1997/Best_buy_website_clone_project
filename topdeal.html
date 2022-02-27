@@ -441,6 +441,17 @@
     import header from "./landing page/Components/Header.js";
     var headerdata = document.querySelector("#header");
     headerdata.innerHTML = header();
+    let dealoftheday=document.querySelector("#lowbox1b")
+dealoftheday.addEventListener("click",gotodealofday)
+function gotodealofday(){
+    window.location.href="../DealDay/deal.html";
+}
+
+let topdeals=document.querySelector("#lowbox1a")
+topdeals.addEventListener("click",gototopdeals)
+function gototopdeals(){
+ window.location.href="../topdeal.html";
+}
     </script>
 
 
