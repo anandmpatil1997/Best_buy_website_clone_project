@@ -179,7 +179,7 @@ body{
 #btnCheckout{
     background-color: yellow;
     /* padding: 10px 95px; */
-    padding: 4% 36%;
+    padding: 4% 38%;
     border-radius: 5px;
     border: 0px;
     font-size: 18px;
@@ -187,8 +187,8 @@ body{
 }
 #btnPaypal{
     background-color: black;
-    padding: 10px 73px;
-    /* padding: 1% 40%; */
+    /* padding: 10px 73px; */
+    padding: 1% 40%;
     border-radius: 5px;
     border: 0px;
     font-size: 18px;
