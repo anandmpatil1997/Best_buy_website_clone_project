@@ -1812,4 +1812,9 @@ let userid=JSON.parse(localStorage.getItem("userdatabase"))||[];
       let usernameshow=document.querySelector("#nameshow");
       usernameshow.append(name);
   });
+
+
+     var cartcounter=document.querySelector("#count");
+    var cartdata=JSON.parse(localStorage.getItem("cartitem"))||[];
+    cartcounter.append(cartdata.length);
 </script>

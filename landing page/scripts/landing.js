@@ -55,12 +55,16 @@ function next6(){
          
     }
 
-    document.querySelector("#logo1").addEventListener("click",logochange)
-    function logochange(){
-        window.location.href="../landing page/landing.html"
-    }
+//    let logoimg= document.querySelector("#logo1")
+//    logoimg.addEventListener("click",logochange())
+//     function logochange(){
+//         window.location.href="../landing page/landing.html"
+//     }
     // var cartcounter=document.querySelector("#count");
     // var cartdata=JSON.parse(localStorage.getItem("cart"))||[];
     // cartcounter.append(cartdata.length);
- 
-  
+    document.querySelector("#logo").addEventListener("click", function() {
+        window.location.href="../landing page/landing.html"
+    });
+    
+  <script src="./scripts/landing.js"></script>

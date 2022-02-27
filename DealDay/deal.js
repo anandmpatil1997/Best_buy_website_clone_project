@@ -217,5 +217,11 @@ function addtocart(elem) {
 }
 
 document.querySelector("#box2").addEventListener("click", function() {
-    window.location.pathname = "..cart/cart.html"
+    window.location.href = "../cart/cart.html"
+
+
+    document.querySelector("#logo").addEventListener("click", function() {
+        window.location.href="../landing page/landing.html"
+    });
 });
+
