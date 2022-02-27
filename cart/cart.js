@@ -163,7 +163,7 @@ document.getElementById("paisa").innerHTML=`$ ${sum-100}`
 
 localStorage.setItem("paisa",sum)
  function movetopayment(){
-     window.location.href="payment.html"
+     window.location.href="../payment/payment.html"
  }
 
 

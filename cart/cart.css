@@ -283,3 +283,36 @@ body{
 #texthover:hover{
     text-decoration: underline;
 }
+
+
+
+/* ==================== */
+
+
+#checkouthead{
+    width: 100%;
+    height: 70px;
+    background-color: #0046be;
+    /* border: 1px solid red; */
+}
+
+
+#headflex{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#headerdiv{
+    display: flex;
+    margin-left: 10%;
+}
+
+
+#headerdiv>div:nth-child(2){
+    margin: auto;
+    color: white;
+    font-size: 34px;
+    font-weight: lighter;
+}
