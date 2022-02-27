@@ -213,6 +213,9 @@ function addtocart(elem) {
 
 
     alert("your product is added succesfully");
-    window.location.href = "..\cart.html"
 
 }
+
+document.querySelector("#box2").addEventListener("click", function() {
+    window.location.pathname = "../cart/cart.html"
+});
