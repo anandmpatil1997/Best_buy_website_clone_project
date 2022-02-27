@@ -210,5 +210,9 @@ function addtocart(elem) {
     console.log(elem);
     cartarr.push(elem);
     localStorage.setItem("cartitem", JSON.stringify(cartarr));
+
+
     alert("your product is added succesfully");
+    window.location.href = "..\cart.html"
+
 }
