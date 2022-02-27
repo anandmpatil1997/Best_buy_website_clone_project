@@ -4,9 +4,10 @@ body {
 
 #heading {
     height: 100px;
-    width: 95%;
+    width: 100%;
     background-color: blue;
     margin: auto;
+    margin-top: 50px;
     display: flex;
     color: white;
 }
@@ -66,12 +67,12 @@ box {
     justify-content: space-between;
 }
 
-h4,
+/* h4,
 h3,
 p {
     color: blue;
     font-size: 15px;
-}
+} */
 
 p2 {
     color: white;

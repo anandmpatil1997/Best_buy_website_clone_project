@@ -7,15 +7,21 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="topdeal.css">
+    <link rel="stylesheet" href="./landing page/styles/landing.css">
+    <link rel="stylesheet" href="./landing page/styles/header.css">
+    <link rel="stylesheet" href="./landing page/styles/Footer.css">
+   
+    <script src="https://kit.fontawesome.com/a4b206329f.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="../landing page/styles/Footer.css"> -->
 </head>
 <body>
     <div id="container">
-        <div id="header">
-            <div id="navbar"></div>
-            <div id="ad">
+        <div id="header">  
+            <!-- <div id="navbar"></div>
+            <<div id="ad">
                 <img src="image\adimg.png" alt="">
-            </div>
-        </div>
+            </div> --> -->
+      </div>
        
         <div id="slidebar">
             <span id="deal">Top Deals</span>
@@ -429,3 +435,18 @@
 </body>
 </html>
 <script src="/topdeal.js"></script>
+
+<script type="module">
+    
+    import header from "./landing page/Components/Header.js";
+    var headerdata = document.querySelector("#header");
+    headerdata.innerHTML = header();
+    </script>
+
+
+<script type="module">
+    import Footer from "./landing page/Components/Footer.js";
+    console.log(Footer);
+    var box = document.querySelector("#footer");
+    box.innerHTML = Footer();
+</script>

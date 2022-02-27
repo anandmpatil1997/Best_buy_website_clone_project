@@ -4,7 +4,7 @@
    
     display: grid;
     grid-template-columns: repeat(6,1fr) ;
-    grid-template-rows: 350px 280px 700px 300px 600px 250px 460px 400px 380px 220px 400px 380px 550px ;
+    grid-template-rows: 170px 280px 700px 300px 600px 250px 460px 400px 380px 220px 400px 380px 550px ;
    
     grid-template-areas: 
     "a a a a a a"
@@ -23,7 +23,7 @@
      ;
 }
 #container>div{
-    border: 1px solid black;
+    border: 0px solid black;
 }
 #header{
     grid-area: a;
@@ -73,7 +73,7 @@
         cursor: pointer;
     }
     .slideimg>div:hover{
-        border: 1px solid rgba(0, 0, 255, 0.534);
+        border: 0px solid rgba(0, 0, 255, 0.534);
        
     }
     .slideimg>div>img{
@@ -155,7 +155,7 @@
     
 }
 #bytv>div{
-    border-right: 1px solid gray;
+    border-right: 1px solid rgb(192, 191, 191);
     height: 100%;
     width: 24%;
     margin: auto;
@@ -231,7 +231,7 @@
 .tex_for1{
     font-size:13px;
     font-family:"Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;
-    color:#040c13;
+    color:#1f3a52;
     cursor: pointer;
     margin-left: 10px;
 
@@ -368,7 +368,7 @@
 }
 #saving{
     font-family:"Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;
-    color:#55555a;
+    color:#808086;
     font-size:11px;
     line-height:18px;
     font-weight:400;
@@ -446,14 +446,14 @@
 #galays2{
     font-family:"Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;
     font-size: 15px;
-    color:#1d252c;
+    color:#68747e;
     line-height:15px;
     font-weight:400;
 }
 #offerEnd{
     font-family:"Human BBY Digital", "Human Fallback", Arial, Helvetica, sans-serif;
     font-size: 11px;
-    color:#55555a;
+    color:#9898a7;
     line-height:13px;
     font-weight:200;
 }

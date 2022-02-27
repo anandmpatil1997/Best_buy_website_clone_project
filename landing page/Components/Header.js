@@ -2,9 +2,9 @@ function Header(){
     return `   <div id="box">
     <div id="upbox">
         <div id="logo">
-          <a href="landing.html">  <img id="logo1"
+          <img id="logo1"
                 src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/BestBuy_Logo_2020-190616.png"
-                alt="logo"></a>
+                alt="logo">
               </div>
         <div id="input">
 

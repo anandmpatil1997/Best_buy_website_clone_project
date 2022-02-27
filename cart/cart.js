@@ -167,6 +167,10 @@ localStorage.setItem("paisa",sum)
  }
 
 
+//  document.querySelector("#logo1").addEventListener("click",logochange)
+//  function logochange(){
+//      window.location.href="../landing page/landing.html"
+//  }
 //  ===========================================
 
 

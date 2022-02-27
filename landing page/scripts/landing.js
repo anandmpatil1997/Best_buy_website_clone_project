@@ -54,6 +54,11 @@ function next6(){
           slidermain6.prepend(swaperitem6[swaperitem6.length-1]);
          
     }
+
+    document.querySelector("#logo1").addEventListener("click",logochange)
+    function logochange(){
+        window.location.href="../landing page/landing.html"
+    }
     // var cartcounter=document.querySelector("#count");
     // var cartdata=JSON.parse(localStorage.getItem("cart"))||[];
     // cartcounter.append(cartdata.length);
