@@ -8,9 +8,13 @@
    
     <link rel="stylesheet" href="./cart.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    
+    <link rel="stylesheet" href="../landing page/styles/header.css">
+    <link rel="stylesheet" href="../landing page/styles/landing.css">
+    <script src="https://kit.fontawesome.com/a4b206329f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../landing page/styles/Footer.css">
 </head>
 <body>
+    <div id="header"></div>
     <section>
         <div id="mainCart">
             <div id="leftcart">
@@ -146,10 +150,236 @@
          
         </div>
     </section>
+    <div id="footer"></div>
 </body>
 </html>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="https://kit.fontawesome.com/d5165a2873.js" crossorigin="anonymous"></script>
 <script src="/cart.js">
 
+</script>
+
+
+
+
+<!-- -----------------------------header script------------------ -->
+
+
+<!-- Footer ends -->
+
+<script type="module">
+    import header from "../landing page/Components/Header.js";
+    var headerdata = document.querySelector("#header");
+    headerdata.innerHTML = header();
+    // var searchingdata = document.querySelector("#inputbox1").value;
+    // searchingdata.addEventListener("",mainshow)
+    var sear=document.querySelector("#searchdata")
+    sear.addEventListener("click",ser)
+    sear.addEventListener("dblclick",dblser)    
+    function dblser(){
+        var showblock=document.querySelector("#searchpacket").style.display="none";
+        
+    }
+    function ser(){
+        var showblock=document.querySelector("#searchpacket").style.display="block";
+        var searchingdata = document.querySelector("#inputbox1").value;
+        async function indata() {
+            try {
+               
+             
+                 var res=await fetch(`https://api.unsplash.com/search/photos?query=${searchingdata}&client_id=4705H5JkxqWRHGwwhn3I4x3Vsc2Dc1cgDUP8xhXoS1g`);
+              var serdata = await res.json();
+              appenddata(serdata.results)
+               console.log(serdata.results) 
+            }
+            catch(err){
+                console.log(err);
+            }
+
+         }
+         indata()
+   
+    }
+        
+    
+            //    console.log(searchingdata)
+   
+   
+  
+        // }
+      
+    
+    function appenddata(result){
+        result.map(element => {
+            var bagsearchdata=[];
+            var imagebox=document.createElement("div");
+            imagebox.setAttribute("id","searchitm")
+            var image=document.createElement("img");
+            var imagebag=document.createElement("div");
+            var textbox=document.createElement("div");
+            var prices=document.createElement("h5");
+            image.src=element.urls.small_s3;
+            image.setAttribute("id","imgs");
+            var name=document.createElement("h4");
+            name.setAttribute("id","blue");
+            name.textContent=element.alt_description;
+            prices.textContent=`Price: ${(Math.floor(Math.random()*1000))}`
+            imagebag.append(image); 
+            textbox.append(name, prices); 
+            imagebox.append(imagebag,textbox);
+            imagebox.addEventListener("click",()=>{
+                bagsearchdata.push(element);
+                localStorage.setItem("selected_items",JSON.stringify(bagsearchdata));
+                 window.location.href="search.html"
+            }) ;
+           
+            document.querySelector("#searchpacket").append(imagebox);
+           });
+          
+}
+
+
+
+    var more=document.querySelector("#moreoption");
+     more.addEventListener("click",moredata);
+     function moredata(){
+     document.querySelector("#Moredroption").style.display="block";
+     
+    } 
+      more=document.querySelector("#moreoption");
+     more.addEventListener("dblclick",remove);
+     function remove(){
+       document.querySelector("#Moredroption").style.display="none";
+    
+     } 
+    //  account drop down ------------------------start------------------------------->
+
+     var drop2=document.querySelector("#Account");
+     drop2.addEventListener("click",dropdata2);
+     function dropdata2(){
+       document.querySelector("#accountoption").style.display="block";
+     }
+      drop2=document.querySelector("#Account");
+     drop2.addEventListener("dblclick",remove2);
+     function remove2(){
+       document.querySelector("#accountoption").style.display="none";
+     }
+
+
+  //  account drop down ----------------------Ends--------------------------------->
+
+
+
+
+
+//   recently viewed items------------------------------- starts--------------->
+
+
+
+var drop3=document.querySelector("#recently");
+     drop3.addEventListener("click",dropdata3);
+     function dropdata3(){
+       document.querySelector("#recently_viewed_items").style.display="block";
+     }
+      drop3=document.querySelector("#recently");
+     drop3.addEventListener("dblclick",remove3);
+     function remove3(){
+       document.querySelector("#recently_viewed_items").style.display="none";
+     }
+
+
+// order stauts------------------------------------------------------>
+
+     var drop4=document.querySelector("#order");
+     drop4.addEventListener("click",dropdata4);
+     function dropdata4(){
+       document.querySelector("#order_status").style.display="block";
+     }
+      drop3=document.querySelector("#order");
+     drop3.addEventListener("dblclick",remove4);
+     function remove4(){
+       document.querySelector("#order_status").style.display="none";
+     }
+
+
+    //  saved images---------------------------------->
+   
+
+
+    var drop5=document.querySelector("#saved");
+     drop5.addEventListener("click",dropdata5);
+     function dropdata5(){
+       document.querySelector(" #saved_images").style.display="block";
+     }
+      drop5=document.querySelector("#saved");
+     drop5.addEventListener("dblclick",remove5);
+     function remove5(){
+       document.querySelector(" #saved_images").style.display="none";
+     }
+
+
+    //  menu___items---------------->
+   
+
+
+    var drop6=document.querySelector("#menu");
+     drop6.addEventListener("click",dropdata6);
+     function dropdata6(){
+       document.querySelector(" #menu_items").style.display="block";
+     }
+      drop6=document.querySelector("#menu");
+     drop6.addEventListener("dblclick",remove6);
+     function remove6(){
+       document.querySelector("#menu_items").style.display="none";
+     }
+
+// location for pages----------------------------------------------------------->
+    
+let topdeals=document.querySelector("#lowbox1a")
+topdeals.addEventListener("click",gototopdeals)
+function gototopdeals(){
+ window.location.href="sample.html";
+}
+
+let dealoftheday=document.querySelector("#lowbox1b")
+dealoftheday.addEventListener("click",gotodealofday)
+function gotodealofday(){
+    window.location.href="sample.html";
+}
+let Bestbuy=document.querySelector("#lowbox1c")
+Bestbuy.addEventListener("click",gotoBestbuy)
+function gotoBestbuy(){
+    window.location.href="sample.html";
+}
+let credit=document.querySelector("#lowbox1d")
+credit.addEventListener("click",gotocredit)
+function gotocredit(){
+    window.location.href="sample.html";
+}
+let giftcredit=document.querySelector("#lowbox1e")
+giftcredit.addEventListener("click",gotogiftcredit)
+function gotogiftcredit(){
+    window.location.href="sample.html";
+}
+let giftidea=document.querySelector("#lowbox1f")
+giftidea.addEventListener("click",gotogiftidea)
+function gotogiftidea(){
+    window.location.href="sample.html";
+}
+
+let cart=document.querySelector("#logocartbtn");
+cart.addEventListener("click",gotocart);
+function gotocart(){
+    alert("Wel-Come To Your Cart");
+    window.location.href="sample.html"
+}
+
+
+</script>
+
+<script type="module">
+    import Footer from "../landing page/Components/Footer.js";
+    console.log(Footer);
+    var box = document.querySelector("#footer");
+    box.innerHTML = Footer();
 </script>
