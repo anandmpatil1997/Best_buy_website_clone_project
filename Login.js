@@ -15,12 +15,12 @@ function loginfunction(event){
    for(var i = 0; i < regdUsers.length ;i++) {
    // console.log(regdUsers[i].username,regdUsers[i].password);
    if(regdUsers[i].username == user && regdUsers[i].password == pass){
-       window.location.href = "home.html";
+       window.location.href = "../landing page/landing.html";
    } 
 }
 }
 
-document.getElementById("image").addEventListener("click",function(){
-    window.location.href="home.html"
-})
+// document.getElementById("image").addEventListener("click",function(){
+//     window.location.href="./landing page/landing.html"
+// })
 
