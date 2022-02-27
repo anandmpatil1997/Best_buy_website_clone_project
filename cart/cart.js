@@ -1,4 +1,4 @@
-
+  
 
 
     var swiper = new Swiper(".mySwiper", {
@@ -165,3 +165,8 @@ localStorage.setItem("paisa",sum)
  function movetopayment(){
      window.location.href="payment.html"
  }
+
+
+//  ===========================================
+
+
