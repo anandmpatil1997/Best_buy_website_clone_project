@@ -384,6 +384,8 @@
    }
 
   #searchdata{
+   
+     color: whitesmoke;
       border: 0px solid gray;
       background-color: transparent;
       cursor: pointer;
