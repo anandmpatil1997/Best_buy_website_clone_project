@@ -67,4 +67,4 @@ function next6(){
         window.location.href="../landing page/landing.html"
     });
     
-  <script src="./scripts/landing.js"></script>
+ 
